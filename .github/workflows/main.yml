@@ -18,8 +18,9 @@ jobs:
           # To enable reachability scanning, add: --reachability
           # To enable npm/dotnet non-lock file scanning, add: --package-json / --dotnet-proj
         env:
-          TRIVY_USERNAME: $AQUA_USERNAME
-          TRIVY_PASSWORD: $AQUA_PASSWORD
+          TRIVY_USERNAME: ${{ secrets.TRIVY_USERNAME }}
+          TRIVY_PASSWORD: ${{ secrets.TRIVY_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AQUA_KEY: ${{ secrets.AQUA_KEY }}
           AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
           AQUA_URL: https://api.supply-chain.cloud.aquasec.com
