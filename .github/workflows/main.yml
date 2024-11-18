@@ -19,6 +19,8 @@ jobs:
           # To enable reachability scanning, add: --reachability
           # To enable npm/dotnet non-lock file scanning, add: --package-json / --dotnet-proj
         env:
+          TRIVY_USERNAME: ${{ secrets.TRIVY_USERNAME }}
+          TRIVY_PASSWORD: ${{ secrets.TRIVY_PASSWORD }}
           AQUA_KEY: ${{ secrets.AQUA_KEY }}
           AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
           GITHUB_TOKEN: ${{ github.token }}
