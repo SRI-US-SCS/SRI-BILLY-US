@@ -1,0 +1,1011 @@
+
+Report Summary
+
+┌─────────────────────────────────────┬──────┬─────────────────┬─────────┐
+│               Target                │ Type │ Vulnerabilities │ Secrets │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ client-environment-app/pom.xml      │ pom  │       11        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ common-app/pom.xml                  │ pom  │       11        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ custom-workflow/pom.xml             │ pom  │       15        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ magnolia-cms-webapp/pom.xml         │ pom  │       19        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ plans-catalog-app/pom.xml           │ pom  │       16        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ pom.xml                             │ pom  │       98        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ single-page-app-integration/pom.xml │ pom  │       11        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ spa-diff-app/pom.xml                │ pom  │       15        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ turnkey-app/pom.xml                 │ pom  │       15        │    -    │
+├─────────────────────────────────────┼──────┼─────────────────┼─────────┤
+│ turnkey-livecopy-app/pom.xml        │ pom  │       11        │    -    │
+└─────────────────────────────────────┴──────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+client-environment-app/pom.xml (pom)
+====================================
+Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │ Status │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed  │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │        │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │        │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │        │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │        │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │        │                   │                              │ part headers                                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.commons:commons-lang3             │ CVE-2025-48924      │ MEDIUM   │        │ 3.17.0            │ 3.18.0                       │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │        │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │        │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │        │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │        │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │        │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │        │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │        │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │        │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │        │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │        │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │        │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │        │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+common-app/pom.xml (pom)
+========================
+Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │ Status │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed  │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │        │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │        │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │        │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │        │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │        │                   │                              │ part headers                                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.commons:commons-lang3             │ CVE-2025-48924      │ MEDIUM   │        │ 3.17.0            │ 3.18.0                       │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │        │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │        │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │        │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │        │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │        │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │        │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │        │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │        │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │        │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │        │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │        │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │        │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+custom-workflow/pom.xml (pom)
+=============================
+Total: 15 (UNKNOWN: 0, LOW: 0, MEDIUM: 9, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.1               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+magnolia-cms-webapp/pom.xml (pom)
+=================================
+Total: 19 (UNKNOWN: 0, LOW: 0, MEDIUM: 10, HIGH: 6, CRITICAL: 3)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.github.junrar:junrar                     │ CVE-2026-28208      │          │          │ 7.5.2             │ 7.5.8                        │ com.github.junrar/junrar: Junrar: Remote code execution via  │
+│                                              │                     │          │          │                   │                              │ path traversal when extracting crafted RAR...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2026-28208                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-beanutils:commons-beanutils          │ CVE-2025-48734      │ HIGH     │          │ 1.9.4             │ 1.11.0                       │ commons-beanutils: Apache Commons BeanUtils:                 │
+│                                              │                     │          │          │                   │                              │ PropertyUtilsBean does not suppresses an enum's              │
+│                                              │                     │          │          │                   │                              │ declaredClass property...                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48734                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │          │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.1               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          │                   │                              ├──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-parser-pdf-module       │ CVE-2025-54988      │          │          │                   │                              │ org.apache.tika/tika-parser-pdf-module: Apache Tika PDF      │
+│                                              │                     │          │          │                   │                              │ parser module: XXE vulnerability in PDFParser's handling     │
+│                                              │                     │          │          │                   │                              │ of...                                                        │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-54988                   │
+│                                              ├─────────────────────┤          │          │                   │                              ├──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-66516      │          │          │                   │                              │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+plans-catalog-app/pom.xml (pom)
+===============================
+Total: 16 (UNKNOWN: 0, LOW: 0, MEDIUM: 9, HIGH: 6, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-beanutils:commons-beanutils          │ CVE-2025-48734      │ HIGH     │          │ 1.9.4             │ 1.11.0                       │ commons-beanutils: Apache Commons BeanUtils:                 │
+│                                              │                     │          │          │                   │                              │ PropertyUtilsBean does not suppresses an enum's              │
+│                                              │                     │          │          │                   │                              │ declaredClass property...                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48734                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │          │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.5               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+pom.xml (pom)
+=============
+Total: 98 (UNKNOWN: 0, LOW: 0, MEDIUM: 52, HIGH: 37, CRITICAL: 9)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-52999      │ HIGH     │          │                   │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.github.junrar:junrar                     │ CVE-2026-28208      │          │          │ 7.5.2             │ 7.5.8                        │ com.github.junrar/junrar: Junrar: Remote code execution via  │
+│                                              │                     │          │          │                   │                              │ path traversal when extracting crafted RAR...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2026-28208                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-15022      │          │          │                   │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-15022      │          │          │                   │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-15022      │          │          │                   │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-beanutils:commons-beanutils          │ CVE-2025-48734      │ HIGH     │          │ 1.9.4             │ 1.11.0                       │ commons-beanutils: Apache Commons BeanUtils:                 │
+│                                              │                     │          │          │                   │                              │ PropertyUtilsBean does not suppresses an enum's              │
+│                                              │                     │          │          │                   │                              │ declaredClass property...                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48734                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │          │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.1               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+│                                              │                     │          │          │                   ├──────────────────────────────┤                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   ├──────────────────────────────┤                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          ├───────────────────┼──────────────────────────────┤                                                              │
+│                                              │                     │          │          │ 2.5               │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-53689      │ HIGH     │          │                   │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┤          │          │                   │                              ├──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-parser-pdf-module       │ CVE-2025-54988      │          │          │                   │                              │ org.apache.tika/tika-parser-pdf-module: Apache Tika PDF      │
+│                                              │                     │          │          │                   │                              │ parser module: XXE vulnerability in PDFParser's handling     │
+│                                              │                     │          │          │                   │                              │ of...                                                        │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-54988                   │
+│                                              ├─────────────────────┤          │          │                   │                              ├──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-66516      │          │          │                   │                              │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+single-page-app-integration/pom.xml (pom)
+=========================================
+Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │ Status │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed  │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │        │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │        │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │        │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │        │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │        │                   │                              │ part headers                                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.commons:commons-lang3             │ CVE-2025-48924      │ MEDIUM   │        │ 3.17.0            │ 3.18.0                       │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │        │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │        │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │        │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │        │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │        │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │        │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │        │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │        │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │        │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │        │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │        │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │        │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+spa-diff-app/pom.xml (pom)
+==========================
+Total: 15 (UNKNOWN: 0, LOW: 0, MEDIUM: 9, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.1               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+turnkey-app/pom.xml (pom)
+=========================
+Total: 15 (UNKNOWN: 0, LOW: 0, MEDIUM: 9, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │  Status  │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed    │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │          │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │          │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │          │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │          │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.nimbusds:nimbus-jose-jwt                 │ CVE-2025-53864      │          │          │ 9.37.3            │ 10.0.2, 9.37.4               │ com.nimbusds/nimbus-jose-jwt: Uncontrolled recursion in      │
+│                                              │                     │          │          │                   │                              │ Connect2id Nimbus JOSE + JWT                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53864                   │
+├──────────────────────────────────────────────┼─────────────────────┤          │          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.vaadin:vaadin-server                     │ CVE-2025-15022      │          │          │ 8.27.3            │ 7.7.50, 8.30.0               │ Vaadin vulnerable to Cross-site Scripting                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-15022                   │
+│                                              ├─────────────────────┤          │          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-9467       │          │          │                   │ 7.7.48, 8.28.2               │ Vaadin Framework possible file bypass via upload validation  │
+│                                              │                     │          │          │                   │                              │ on the server-side                                           │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-9467                    │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │          │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │          │                   │                              │ part headers                                                 │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-lang:commons-lang                    │ CVE-2025-48924      │ MEDIUM   │ affected │ 2.1               │                              │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │          │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┤                     │          ├──────────┼───────────────────┼──────────────────────────────┤                                                              │
+│ org.apache.commons:commons-lang3             │                     │          │ fixed    │ 3.17.0            │ 3.18.0                       │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │          │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │          │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │          │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │          │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │          │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+│                                              │                     │          │          │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │          │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │          │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │          │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │          │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │          │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │          │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤          ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │          │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │          │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+turnkey-livecopy-app/pom.xml (pom)
+==================================
+Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 5, CRITICAL: 1)
+
+┌──────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                    │    Vulnerability    │ Severity │ Status │ Installed Version │        Fixed Version         │                            Title                             │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core      │ CVE-2025-52999      │ HIGH     │ fixed  │ 2.13.5            │ 2.15.0                       │ com.fasterxml.jackson.core/jackson-core: jackson-core        │
+│                                              │                     │          │        │                   │                              │ Potential StackoverflowError                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-52999                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ GHSA-72hv-8253-57qq │ MEDIUM   │        │                   │ 2.18.6, 2.21.1, 3.1.0        │ jackson-core: Number Length Constraint Bypass in Async       │
+│                                              │                     │          │        │                   │                              │ Parser Leads to Potential DoS...                             │
+│                                              │                     │          │        │                   │                              │ https://github.com/advisories/GHSA-72hv-8253-57qq            │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ commons-fileupload:commons-fileupload        │ CVE-2025-48976      │ HIGH     │        │ 1.5               │ 1.6.0                        │ apache-commons-fileupload: Apache Commons FileUpload DoS via │
+│                                              │                     │          │        │                   │                              │ part headers                                                 │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48976                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.commons:commons-lang3             │ CVE-2025-48924      │ MEDIUM   │        │ 3.17.0            │ 3.18.0                       │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                              │                     │          │        │                   │                              │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-core        │ CVE-2025-53689      │ HIGH     │        │ 2.22.0            │ 2.23.2-beta, 2.20.17, 2.22.1 │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+│                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                              │ CVE-2025-58782      │ MEDIUM   │        │                   │ 2.22.2                       │ org.apache.jackrabbit/jackrabbit-core:                       │
+│                                              │                     │          │        │                   │                              │ org.apache.jackrabbit/jackrabbit-jcr-commons: Apache         │
+│                                              │                     │          │        │                   │                              │ Jackrabbit JNDI injection                                    │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-58782                   │
+├──────────────────────────────────────────────┤                     │          │        │                   │                              │                                                              │
+│ org.apache.jackrabbit:jackrabbit-jcr-commons │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+│                                              │                     │          │        │                   │                              │                                                              │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        │                   ├──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.jackrabbit:jackrabbit-spi-commons │ CVE-2025-53689      │ HIGH     │        │                   │ 2.20.17, 2.22.1, 2.23.2-beta │ jackrabbit-spi-commons: jackrabbit-core: Apache Jackrabbit   │
+│                                              │                     │          │        │                   │                              │ XXE vulnerability                                            │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-53689                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.logging.log4j:log4j-core          │ CVE-2025-68161      │ MEDIUM   │        │ 2.24.2            │ 2.25.3                       │ Apache Log4j: Apache Log4j Core: Information disclosure via  │
+│                                              │                     │          │        │                   │                              │ missing TLS hostname verification...                         │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-68161                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.tika:tika-core                    │ CVE-2025-66516      │ CRITICAL │        │ 2.4.1             │ 3.2.2                        │ tika-core: tika-parsers: tika-parser-pdf-module: Apache Tika │
+│                                              │                     │          │        │                   │                              │ core, Apache Tika parsers, Apache Tika PDF...                │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2025-66516                   │
+├──────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.yaml:snakeyaml                           │ CVE-2022-1471       │ HIGH     │        │ 1.33              │ 2.0                          │ SnakeYaml: Constructor Deserialization Remote Code Execution │
+│                                              │                     │          │        │                   │                              │ https://avd.aquasec.com/nvd/cve-2022-1471                    │
+└──────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────┴──────────────────────────────────────────────────────────────┘

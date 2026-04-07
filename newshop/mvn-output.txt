@@ -1,0 +1,1923 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping:magnolia-cms-webapp:war:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 204, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping.modules:plans-catalog-app:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 161, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping.modules:single-page-app-integration:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 88, column 24
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping.modules:turnkey-app:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 161, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.content.workflow:custom-workflow:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 61, column 18
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping.modules:client-environment-app:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 55, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping.modules:common-app:jar:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 95, column 11
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for roosevelt.shopping:shopping-cms-webapp:pom:3.0.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 106, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] shopping-cms (parent pom)                                          [pom]
+[INFO] common-app Magnolia module                                         [jar]
+[INFO] plans-catalog-app Magnolia Module                                  [jar]
+[INFO] turnkey-app Magnolia Module                                        [jar]
+[INFO] SPA Integration Magnolia Module                                    [jar]
+[INFO] custom-workflow Magnolia Module                                    [jar]
+[INFO] client-environment-app Magnolia Module                             [jar]
+[INFO] magnolia-cms-webapp: webapp                                        [war]
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml
+Downloading from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml
+Progress (1): 0.4/2.7 kBProgress (2): 0.4/2.7 kB | 0.4/2.7 kBProgress (3): 0.4/2.7 kB | 0.4/2.7 kB | 0.4/2.7 kBProgress (3): 0.4/2.7 kB | 2.7 kB | 0.4/2.7 kB    Progress (3): 2.7 kB | 2.7 kB | 0.4/2.7 kB    Progress (3): 2.7 kB | 2.7 kB | 2.7 kB                                          Downloaded from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml (2.7 kB at 7.4 kB/s)
+Downloaded from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml (2.7 kB at 7.4 kB/s)
+Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml (2.7 kB at 7.4 kB/s)
+[WARNING] Could not transfer metadata org.apache.maven.plugins:maven-surefire-plugin/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/apache/maven/plugins/maven-metadata.xml
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/apache/maven/plugins/maven-metadata.xml
+Downloading from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/apache/maven/plugins/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 0.4/14 kBProgress (2): 0.4/14 kB | 0.4/14 kBProgress (2): 8.2/14 kB | 0.4/14 kBProgress (2): 8.2/14 kB | 8.2/14 kBProgress (3): 8.2/14 kB | 8.2/14 kB | 0.4/14 kBProgress (3): 8.2/14 kB | 14 kB | 0.4/14 kB    Progress (3): 14 kB | 14 kB | 0.4/14 kB    Progress (3): 14 kB | 14 kB | 8.2/14 kBProgress (3): 14 kB | 14 kB | 14 kB                                       Downloaded from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/apache/maven/plugins/maven-metadata.xml (14 kB at 433 kB/s)
+Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/apache/maven/plugins/maven-metadata.xml (14 kB at 433 kB/s)
+Downloaded from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/apache/maven/plugins/maven-metadata.xml (14 kB at 433 kB/s)
+Downloading from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/codehaus/mojo/maven-metadata.xml
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/codehaus/mojo/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/codehaus/mojo/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (1): 0.4/21 kBProgress (2): 0.4/21 kB | 0.4/21 kBProgress (3): 0.4/21 kB | 0.4/21 kB | 0.4/21 kBProgress (3): 0.4/21 kB | 0.4/21 kB | 8.2/21 kBProgress (3): 0.4/21 kB | 8.2/21 kB | 8.2/21 kBProgress (3): 8.2/21 kB | 8.2/21 kB | 8.2/21 kBProgress (3): 8.2/21 kB | 8.2/21 kB | 16/21 kB Progress (3): 16/21 kB | 8.2/21 kB | 16/21 kB Progress (3): 16/21 kB | 16/21 kB | 16/21 kB Progress (3): 16/21 kB | 16/21 kB | 21 kB   Progress (3): 16/21 kB | 21 kB | 21 kB   Progress (3): 21 kB | 21 kB | 21 kB                                      Downloaded from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/codehaus/mojo/maven-metadata.xml (21 kB at 607 kB/s)
+Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/codehaus/mojo/maven-metadata.xml (21 kB at 607 kB/s)
+Downloaded from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/codehaus/mojo/maven-metadata.xml (21 kB at 543 kB/s)
+[WARNING] Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] ---------------< roosevelt.shopping:shopping-cms-webapp >---------------
+[INFO] Building shopping-cms (parent pom) 3.0.2-SNAPSHOT                  [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ shopping-cms-webapp ---
+[INFO] roosevelt.shopping:shopping-cms-webapp:pom:3.0.2-SNAPSHOT
+[INFO] 
+[INFO] ---------------< roosevelt.shopping.modules:common-app >----------------
+[INFO] Building common-app Magnolia module 3.0.2-SNAPSHOT                 [2/8]
+[INFO]   from common-app/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ common-app ---
+[INFO] roosevelt.shopping.modules:common-app:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- info.magnolia.rest:magnolia-rest-services:jar:3.0.0:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  +- org.glassfish:javax.json:jar:1.1.4:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.26:compile
+[INFO] |  \- org.jboss.resteasy:resteasy-multipart-provider:jar:5.0.9.Final:compile
+[INFO] |     +- com.sun.mail:jakarta.mail:jar:1.6.4:compile
+[INFO] |     |  \- com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[INFO] |     +- org.apache.james:apache-mime4j-dom:jar:0.8.11:compile
+[INFO] |     |  \- org.apache.james:apache-mime4j-core:jar:0.8.11:compile
+[INFO] |     \- org.apache.james:apache-mime4j-storage:jar:0.8.11:compile
+[INFO] +- io.swagger:swagger-annotations:jar:1.5.4:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-integration:jar:3.0.2:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] |  |  \- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core-spi:jar:5.0.9.Final:compile
+[INFO] |  |  +- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core:jar:5.0.9.Final:compile
+[INFO] |  |  \- com.ibm.async:asyncutil:jar:0.1.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jackson2-provider:jar:5.0.9.Final:compile
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.5:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.5:compile
+[INFO] |  |  \- com.github.java-json-tools:json-patch:jar:1.13:compile
+[INFO] |  |     +- com.github.java-json-tools:msg-simple:jar:1.2:compile
+[INFO] |  |     |  \- com.github.java-json-tools:btf:jar:1.3:compile
+[INFO] |  |     \- com.github.java-json-tools:jackson-coreutils:jar:2.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jaxb-provider:jar:5.0.9.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.8:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.8:compile
+[INFO] |  |     \- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  +- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile
+[INFO] |  \- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO] |     \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] +- org.powermock:powermock-module-junit4:jar:1.7.1:test
+[INFO] |  \- org.powermock:powermock-module-junit4-common:jar:1.7.1:test
+[INFO] |     +- org.powermock:powermock-reflect:jar:1.7.1:test
+[INFO] |     \- org.powermock:powermock-core:jar:1.7.1:test
+[INFO] |        \- org.javassist:javassist:jar:3.30.2-GA:test
+[INFO] +- org.powermock:powermock-api-mockito2:jar:1.7.1:test
+[INFO] |  +- org.powermock:powermock-api-mockito-common:jar:1.7.1:test
+[INFO] |  |  \- org.powermock:powermock-api-support:jar:1.7.1:test
+[INFO] |  \- org.mockito:mockito-core:jar:4.11.0:test
+[INFO] |     \- net.bytebuddy:byte-buddy-agent:jar:1.12.19:test
+[INFO] \- org.apache.sling:org.apache.sling.testing.jcr-mock:jar:1.4.0:test
+[INFO]    \- org.apache.jackrabbit:jackrabbit-api:jar:2.8.0:test
+[INFO] 
+[INFO] ------------< roosevelt.shopping.modules:plans-catalog-app >------------
+[INFO] Building plans-catalog-app Magnolia Module 3.0.2-SNAPSHOT          [3/8]
+[INFO]   from plans-catalog-app/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/shopping-cms/1.0-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/shopping-cms/1.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/609 BProgress (1): 609 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/shopping-cms/1.0-SNAPSHOT/maven-metadata.xml (609 B at 10 kB/s)
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ plans-catalog-app ---
+[INFO] roosevelt.shopping.modules:plans-catalog-app:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- com.vaadin:vaadin-server:jar:8.27.3:compile
+[INFO] |  +- com.vaadin:vaadin-sass-compiler:jar:0.9.13:provided
+[INFO] |  |  +- org.w3c.css:sac:jar:1.3:provided
+[INFO] |  |  \- com.vaadin.external.flute:flute:jar:1.3.0.gg2:provided
+[INFO] |  +- com.vaadin:vaadin-shared:jar:8.27.3:compile
+[INFO] |  |  \- com.vaadin.external.gwt:gwt-elemental:jar:2.8.2.vaadin2:compile
+[INFO] |  +- com.vaadin:license-checker:jar:1.12.14:compile
+[INFO] |  |  +- com.github.oshi:oshi-core:jar:6.4.0:compile
+[INFO] |  |  |  +- net.java.dev.jna:jna:jar:5.13.0:compile
+[INFO] |  |  |  \- net.java.dev.jna:jna-platform:jar:5.13.0:compile
+[INFO] |  |  +- com.nimbusds:nimbus-jose-jwt:jar:9.37.3:compile
+[INFO] |  |  +- org.lucee:jcip-annotations:jar:1.0.0:compile
+[INFO] |  |  \- com.vaadin:open:jar:8.5.0.1:compile
+[INFO] |  +- org.jsoup:jsoup:jar:1.18.3:compile
+[INFO] |  +- com.vaadin.external:gentyref:jar:1.2.0.vaadin1:compile
+[INFO] |  \- org.javassist:javassist:jar:3.30.2-GA:compile
+[INFO] +- info.magnolia.ui:magnolia-ui-admincentral:jar:6.3.0:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  \- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  +- info.magnolia.core:magnolia-virtual-uri:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-i18n:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.admincentral:magnolia-admincentral:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-resurface-theme:jar:6.3.8:compile
+[INFO] |  |  |  \- com.vaadin:vaadin-themes:jar:8.27.3:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-periscope-core:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-periscope-api:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-speech-recognition:jar:2.0.1:compile
+[INFO] |  |  +- com.vaadin.addon:date-range-field:jar:0.2.0:compile
+[INFO] |  |  +- com.vaadin:vaadin-push:jar:8.27.3:compile
+[INFO] |  |  |  \- com.vaadin.external.atmosphere:atmosphere-runtime:jar:2.4.30.vaadin7:compile
+[INFO] |  |  |     \- com.vaadin.external.slf4j:vaadin-slf4j-jdk14:jar:1.6.1:compile
+[INFO] |  |  +- org.vaadin.addons:vaadin-combobox-multiselect:jar:2.7:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-contexthelp:jar:1.3.19:compile
+[INFO] |  |  \- io.reactivex.rxjava2:rxjava:jar:2.2.21:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.types:magnolia-content-types:jar:2.0.1:compile
+[INFO] |  |  +- org.vaadin.patrik:GridFastNavigation:jar:2.6.3:compile
+[INFO] |  |  +- org.vaadin.addons:aceeditor:jar:0.8.15:compile
+[INFO] |  |  +- org.vaadin.addons:extended-token-field:jar:0.3.0:compile
+[INFO] |  |  +- org.vaadin.alump:ckeditor:jar:0.1.2:compile
+[INFO] |  |  +- com.google.code.gson:gson:jar:2.11.0:compile
+[INFO] |  |  \- org.devlib.schmidt:imageinfo:jar:1.9:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-compatibility:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-aceeditor:jar:1.3.19:compile
+[INFO] |  |  +- info.magnolia.scheduler:magnolia-module-scheduler:jar:3.0.0:compile
+[INFO] |  |  +- org.quartz-scheduler:quartz:jar:2.5.0:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-ckeditor:jar:1.3.19:compile
+[INFO] |  |  +- org.apache.commons:commons-compress:jar:1.26.0:compile
+[INFO] |  |  +- org.vaadin.addon:easyuploads:jar:8.0.1:compile
+[INFO] |  |  |  \- org.vaadin:viritin-v7-compatibility:jar:1.0:compile
+[INFO] |  |  |     +- org.vaadin:viritin:jar:2.1:compile
+[INFO] |  |  |     +- org.vaadin.addon:confirmdialog:jar:3.2.0:compile
+[INFO] |  |  |     +- org.commonjava.googlecode.markdown4j:markdown4j:jar:2.2-cj-1.1:compile
+[INFO] |  |  |     \- javax.el:javax.el-api:jar:2.2.4:compile
+[INFO] |  |  \- com.jhlabs:filters:jar:2.0.235-1:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-jcr:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.imaging:magnolia-imaging-support:jar:4.0.3:compile
+[INFO] |  |  \- info.magnolia.imaging:magnolia-imaging:jar:4.0.3:compile
+[INFO] |  |     +- com.twelvemonkeys.imageio:imageio-jpeg:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.imageio:imageio-core:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.imageio:imageio-metadata:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.common:common-lang:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.common:common-io:jar:3.12.0:compile
+[INFO] |  |     |  \- com.twelvemonkeys.common:common-image:jar:3.12.0:compile
+[INFO] |  |     +- com.twelvemonkeys.imageio:imageio-tiff:jar:3.12.0:compile
+[INFO] |  |     +- com.github.usefulness:webp-imageio:jar:0.9.0:compile
+[INFO] |  |     |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:2.1.0:compile
+[INFO] |  |     |     \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |     +- com.alexdupre:pngj:jar:2.1.2.1:compile
+[INFO] |  |     \- com.drewnoakes:metadata-extractor:jar:2.18.0:compile
+[INFO] |  |        \- com.adobe.xmp:xmpcore:jar:6.1.11:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-api:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-vaadin-theme:jar:6.3.8:compile
+[INFO] |  |  \- com.vaadin:vaadin-compatibility-themes:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-vaadin-common-widgets:jar:6.3.8:compile
+[INFO] |  |  \- org.vaadin.addons:gwt-graphics:jar:1.0.0:compile
+[INFO] |  +- info.magnolia.task:magnolia-task-management:jar:2.0.0:compile
+[INFO] |  |  \- info.magnolia.ocm:jackrabbit-ocm:jar:3.0.0-magnolia:compile
+[INFO] |  |     \- org.apache.derby:derby:jar:10.14.3.0-magnolia:compile
+[INFO] |  +- info.magnolia.icons:magnolia-icons:jar:29:compile
+[INFO] |  +- info.magnolia.vaadin.addons:vaadin-compatibility-context-menu:jar:1.3.19:compile
+[INFO] |  +- com.vaadin:vaadin-compatibility-shared:jar:8.27.3:compile
+[INFO] |  \- com.vaadin:vaadin-compatibility-server:jar:8.27.3:compile
+[INFO] +- info.magnolia.form:magnolia-form:jar:3.0.0:compile
+[INFO] |  \- info.magnolia:magnolia-module-mail:jar:6.0.0:compile
+[INFO] |     +- com.sun.mail:jakarta.mail:jar:1.6.4:compile
+[INFO] |     +- com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[INFO] |     +- com.google.api-client:google-api-client:jar:2.7.0:compile
+[INFO] |     |  +- com.google.auth:google-auth-library-credentials:jar:1.23.0:compile
+[INFO] |     |  +- com.google.auth:google-auth-library-oauth2-http:jar:1.23.0:compile
+[INFO] |     |  |  \- com.google.auto.value:auto-value-annotations:jar:1.10.4:compile
+[INFO] |     |  +- com.google.http-client:google-http-client-gson:jar:1.45.0:compile
+[INFO] |     |  \- com.google.http-client:google-http-client-apache-v2:jar:1.45.0:compile
+[INFO] |     +- com.google.http-client:google-http-client:jar:1.45.1:compile
+[INFO] |     |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |     |  +- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |     |  +- io.grpc:grpc-context:jar:1.68.2:compile
+[INFO] |     |  |  \- io.grpc:grpc-api:jar:1.68.2:runtime
+[INFO] |     |  +- io.opencensus:opencensus-api:jar:0.31.1:compile
+[INFO] |     |  \- io.opencensus:opencensus-contrib-http-util:jar:0.31.1:compile
+[INFO] |     +- com.google.http-client:google-http-client-jackson2:jar:1.45.1:compile
+[INFO] |     +- com.google.oauth-client:google-oauth-client:jar:1.36.0:compile
+[INFO] |     \- com.microsoft.azure:msal4j:jar:1.17.3:compile
+[INFO] |        +- com.nimbusds:oauth2-oidc-sdk:jar:11.18:compile
+[INFO] |        |  +- com.nimbusds:content-type:jar:2.3:compile
+[INFO] |        |  \- com.nimbusds:lang-tag:jar:1.7:compile
+[INFO] |        \- net.minidev:json-smart:jar:2.5.2:compile
+[INFO] |           \- net.minidev:accessors-smart:jar:2.5.2:compile
+[INFO] +- info.magnolia.dam:magnolia-dam-jcr:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-api:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-core:jar:4.0.6:compile
+[INFO] |  \- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] +- info.magnolia:magnolia-templating:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-rendering:jar:6.3.8:compile
+[INFO] |  \- info.magnolia.core:magnolia-freemarker-support:jar:6.3.8:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] +- net.sf.json-lib:json-lib:jar:jdk15:2.4:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.5:compile
+[INFO] |  +- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  \- net.sf.ezmorph:ezmorph:jar:1.0.6:compile
+[INFO] +- info.magnolia.definitions:magnolia-definitions-app:jar:3.0.4:compile
+[INFO] |  \- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] +- info.magnolia.site:magnolia-site:jar:2.0.1:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-services:jar:3.0.0:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  +- org.glassfish:javax.json:jar:1.1.4:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.26:compile
+[INFO] |  \- org.jboss.resteasy:resteasy-multipart-provider:jar:5.0.9.Final:compile
+[INFO] |     +- org.apache.james:apache-mime4j-dom:jar:0.8.11:compile
+[INFO] |     |  \- org.apache.james:apache-mime4j-core:jar:0.8.11:compile
+[INFO] |     \- org.apache.james:apache-mime4j-storage:jar:0.8.11:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-integration:jar:3.0.2:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core-spi:jar:5.0.9.Final:compile
+[INFO] |  |  +- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core:jar:5.0.9.Final:compile
+[INFO] |  |  \- com.ibm.async:asyncutil:jar:0.1.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jackson2-provider:jar:5.0.9.Final:compile
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.5:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.5:compile
+[INFO] |  |  \- com.github.java-json-tools:json-patch:jar:1.13:compile
+[INFO] |  |     +- com.github.java-json-tools:msg-simple:jar:1.2:compile
+[INFO] |  |     |  \- com.github.java-json-tools:btf:jar:1.3:compile
+[INFO] |  |     \- com.github.java-json-tools:jackson-coreutils:jar:2.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jaxb-provider:jar:5.0.9.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.8:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.8:compile
+[INFO] |  |     \- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  +- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile
+[INFO] |  \- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] +- io.swagger:swagger-annotations:jar:1.5.4:compile
+[INFO] +- roosevelt.shopping.modules:common-app:jar:0.0.1:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO] |     \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] +- org.powermock:powermock-module-junit4:jar:1.7.1:test
+[INFO] |  \- org.powermock:powermock-module-junit4-common:jar:1.7.1:test
+[INFO] |     +- org.powermock:powermock-reflect:jar:1.7.1:test
+[INFO] |     \- org.powermock:powermock-core:jar:1.7.1:test
+[INFO] +- org.powermock:powermock-api-mockito2:jar:1.7.1:test
+[INFO] |  +- org.powermock:powermock-api-mockito-common:jar:1.7.1:test
+[INFO] |  |  \- org.powermock:powermock-api-support:jar:1.7.1:test
+[INFO] |  \- org.mockito:mockito-core:jar:4.11.0:test
+[INFO] |     \- net.bytebuddy:byte-buddy-agent:jar:1.12.19:test
+[INFO] +- org.apache.sling:org.apache.sling.testing.jcr-mock:jar:1.4.0:test
+[INFO] |  \- org.apache.jackrabbit:jackrabbit-api:jar:2.8.0:test
+[INFO] +- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] \- commons-beanutils:commons-beanutils:jar:1.9.4:compile
+[INFO] 
+[INFO] ---------------< roosevelt.shopping.modules:turnkey-app >---------------
+[INFO] Building turnkey-app Magnolia Module 3.0.2-SNAPSHOT                [4/8]
+[INFO]   from turnkey-app/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/jacoco/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/jacoco/maven-metadata.xml
+Downloading from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/jacoco/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/maven-metadata.xml
+Progress (1): 237 BProgress (2): 237 B | 237 B                           Downloaded from ETS-central: https://artifactory.renhsc.com:443/artifactory/libs-release/org/jacoco/maven-metadata.xml (237 B at 9.1 kB/s)
+Downloaded from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/org/jacoco/maven-metadata.xml (237 B at 9.1 kB/s)
+Progress (1): 237 B                   Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/org/jacoco/maven-metadata.xml (237 B at 572 B/s)
+[WARNING] Could not transfer metadata org.jacoco/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ turnkey-app ---
+[INFO] roosevelt.shopping.modules:turnkey-app:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- com.vaadin:vaadin-server:jar:8.27.3:compile
+[INFO] |  +- com.vaadin:vaadin-sass-compiler:jar:0.9.13:provided
+[INFO] |  |  +- org.w3c.css:sac:jar:1.3:provided
+[INFO] |  |  \- com.vaadin.external.flute:flute:jar:1.3.0.gg2:provided
+[INFO] |  +- com.vaadin:vaadin-shared:jar:8.27.3:compile
+[INFO] |  |  \- com.vaadin.external.gwt:gwt-elemental:jar:2.8.2.vaadin2:compile
+[INFO] |  +- com.vaadin:license-checker:jar:1.12.14:compile
+[INFO] |  |  +- com.github.oshi:oshi-core:jar:6.4.0:compile
+[INFO] |  |  |  +- net.java.dev.jna:jna:jar:5.13.0:compile
+[INFO] |  |  |  \- net.java.dev.jna:jna-platform:jar:5.13.0:compile
+[INFO] |  |  +- com.nimbusds:nimbus-jose-jwt:jar:9.37.3:compile
+[INFO] |  |  +- org.lucee:jcip-annotations:jar:1.0.0:compile
+[INFO] |  |  \- com.vaadin:open:jar:8.5.0.1:compile
+[INFO] |  +- org.jsoup:jsoup:jar:1.18.3:compile
+[INFO] |  +- com.vaadin.external:gentyref:jar:1.2.0.vaadin1:compile
+[INFO] |  \- org.javassist:javassist:jar:3.30.2-GA:compile
+[INFO] +- org.mockito:mockito-core:jar:3.0.0:test
+[INFO] |  \- net.bytebuddy:byte-buddy-agent:jar:1.9.10:test
+[INFO] +- info.magnolia.ui:magnolia-ui-admincentral:jar:6.3.0:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  \- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  +- info.magnolia.core:magnolia-virtual-uri:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-i18n:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.admincentral:magnolia-admincentral:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-resurface-theme:jar:6.3.8:compile
+[INFO] |  |  |  \- com.vaadin:vaadin-themes:jar:8.27.3:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-periscope-core:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-periscope-api:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-speech-recognition:jar:2.0.1:compile
+[INFO] |  |  +- com.vaadin.addon:date-range-field:jar:0.2.0:compile
+[INFO] |  |  +- com.vaadin:vaadin-push:jar:8.27.3:compile
+[INFO] |  |  |  \- com.vaadin.external.atmosphere:atmosphere-runtime:jar:2.4.30.vaadin7:compile
+[INFO] |  |  |     \- com.vaadin.external.slf4j:vaadin-slf4j-jdk14:jar:1.6.1:compile
+[INFO] |  |  +- org.vaadin.addons:vaadin-combobox-multiselect:jar:2.7:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-contexthelp:jar:1.3.19:compile
+[INFO] |  |  \- io.reactivex.rxjava2:rxjava:jar:2.2.21:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.types:magnolia-content-types:jar:2.0.1:compile
+[INFO] |  |  +- org.vaadin.patrik:GridFastNavigation:jar:2.6.3:compile
+[INFO] |  |  +- org.vaadin.addons:aceeditor:jar:0.8.15:compile
+[INFO] |  |  +- org.vaadin.addons:extended-token-field:jar:0.3.0:compile
+[INFO] |  |  +- org.vaadin.alump:ckeditor:jar:0.1.2:compile
+[INFO] |  |  +- com.google.code.gson:gson:jar:2.11.0:compile
+[INFO] |  |  \- org.devlib.schmidt:imageinfo:jar:1.9:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-compatibility:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-aceeditor:jar:1.3.19:compile
+[INFO] |  |  +- info.magnolia.scheduler:magnolia-module-scheduler:jar:3.0.0:compile
+[INFO] |  |  +- org.quartz-scheduler:quartz:jar:2.5.0:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-ckeditor:jar:1.3.19:compile
+[INFO] |  |  +- org.apache.commons:commons-compress:jar:1.26.0:compile
+[INFO] |  |  +- org.vaadin.addon:easyuploads:jar:8.0.1:compile
+[INFO] |  |  |  \- org.vaadin:viritin-v7-compatibility:jar:1.0:compile
+[INFO] |  |  |     +- org.vaadin:viritin:jar:2.1:compile
+[INFO] |  |  |     +- org.vaadin.addon:confirmdialog:jar:3.2.0:compile
+[INFO] |  |  |     +- org.commonjava.googlecode.markdown4j:markdown4j:jar:2.2-cj-1.1:compile
+[INFO] |  |  |     \- javax.el:javax.el-api:jar:2.2.4:compile
+[INFO] |  |  \- com.jhlabs:filters:jar:2.0.235-1:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-jcr:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.imaging:magnolia-imaging-support:jar:4.0.3:compile
+[INFO] |  |  \- info.magnolia.imaging:magnolia-imaging:jar:4.0.3:compile
+[INFO] |  |     +- com.twelvemonkeys.imageio:imageio-jpeg:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.imageio:imageio-core:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.imageio:imageio-metadata:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.common:common-lang:jar:3.12.0:compile
+[INFO] |  |     |  +- com.twelvemonkeys.common:common-io:jar:3.12.0:compile
+[INFO] |  |     |  \- com.twelvemonkeys.common:common-image:jar:3.12.0:compile
+[INFO] |  |     +- com.twelvemonkeys.imageio:imageio-tiff:jar:3.12.0:compile
+[INFO] |  |     +- com.github.usefulness:webp-imageio:jar:0.9.0:compile
+[INFO] |  |     |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:2.1.0:compile
+[INFO] |  |     |     \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |     +- com.alexdupre:pngj:jar:2.1.2.1:compile
+[INFO] |  |     \- com.drewnoakes:metadata-extractor:jar:2.18.0:compile
+[INFO] |  |        \- com.adobe.xmp:xmpcore:jar:6.1.11:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-api:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-vaadin-theme:jar:6.3.8:compile
+[INFO] |  |  \- com.vaadin:vaadin-compatibility-themes:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-vaadin-common-widgets:jar:6.3.8:compile
+[INFO] |  |  \- org.vaadin.addons:gwt-graphics:jar:1.0.0:compile
+[INFO] |  +- info.magnolia.task:magnolia-task-management:jar:2.0.0:compile
+[INFO] |  |  \- info.magnolia.ocm:jackrabbit-ocm:jar:3.0.0-magnolia:compile
+[INFO] |  |     +- commons-lang:commons-lang:jar:2.1:compile
+[INFO] |  |     \- org.apache.derby:derby:jar:10.14.3.0-magnolia:compile
+[INFO] |  +- info.magnolia.icons:magnolia-icons:jar:29:compile
+[INFO] |  +- info.magnolia.vaadin.addons:vaadin-compatibility-context-menu:jar:1.3.19:compile
+[INFO] |  +- com.vaadin:vaadin-compatibility-shared:jar:8.27.3:compile
+[INFO] |  \- com.vaadin:vaadin-compatibility-server:jar:8.27.3:compile
+[INFO] +- info.magnolia.form:magnolia-form:jar:3.0.0:compile
+[INFO] |  \- info.magnolia:magnolia-module-mail:jar:6.0.0:compile
+[INFO] |     +- com.sun.mail:jakarta.mail:jar:1.6.4:compile
+[INFO] |     +- com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[INFO] |     +- com.google.api-client:google-api-client:jar:2.7.0:compile
+[INFO] |     |  +- com.google.auth:google-auth-library-credentials:jar:1.23.0:compile
+[INFO] |     |  +- com.google.auth:google-auth-library-oauth2-http:jar:1.23.0:compile
+[INFO] |     |  |  \- com.google.auto.value:auto-value-annotations:jar:1.10.4:compile
+[INFO] |     |  +- com.google.http-client:google-http-client-gson:jar:1.45.0:compile
+[INFO] |     |  \- com.google.http-client:google-http-client-apache-v2:jar:1.45.0:compile
+[INFO] |     +- com.google.http-client:google-http-client:jar:1.45.1:compile
+[INFO] |     |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |     |  +- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |     |  +- io.grpc:grpc-context:jar:1.68.2:compile
+[INFO] |     |  |  \- io.grpc:grpc-api:jar:1.68.2:runtime
+[INFO] |     |  +- io.opencensus:opencensus-api:jar:0.31.1:compile
+[INFO] |     |  \- io.opencensus:opencensus-contrib-http-util:jar:0.31.1:compile
+[INFO] |     +- com.google.http-client:google-http-client-jackson2:jar:1.45.1:compile
+[INFO] |     +- com.google.oauth-client:google-oauth-client:jar:1.36.0:compile
+[INFO] |     \- com.microsoft.azure:msal4j:jar:1.17.3:compile
+[INFO] |        +- com.nimbusds:oauth2-oidc-sdk:jar:11.18:compile
+[INFO] |        |  +- com.nimbusds:content-type:jar:2.3:compile
+[INFO] |        |  \- com.nimbusds:lang-tag:jar:1.7:compile
+[INFO] |        \- net.minidev:json-smart:jar:2.5.2:compile
+[INFO] |           \- net.minidev:accessors-smart:jar:2.5.2:compile
+[INFO] +- info.magnolia.dam:magnolia-dam-jcr:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-api:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-core:jar:4.0.6:compile
+[INFO] |  \- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] +- info.magnolia:magnolia-templating:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-rendering:jar:6.3.8:compile
+[INFO] |  \- info.magnolia.core:magnolia-freemarker-support:jar:6.3.8:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] +- info.magnolia.definitions:magnolia-definitions-app:jar:3.0.4:compile
+[INFO] |  \- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] +- info.magnolia.site:magnolia-site:jar:2.0.1:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-integration:jar:3.0.2:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core-spi:jar:5.0.9.Final:compile
+[INFO] |  |  +- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core:jar:5.0.9.Final:compile
+[INFO] |  |  \- com.ibm.async:asyncutil:jar:0.1.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jackson2-provider:jar:5.0.9.Final:compile
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.5:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.5:compile
+[INFO] |  |  \- com.github.java-json-tools:json-patch:jar:1.13:compile
+[INFO] |  |     +- com.github.java-json-tools:msg-simple:jar:1.2:compile
+[INFO] |  |     |  \- com.github.java-json-tools:btf:jar:1.3:compile
+[INFO] |  |     \- com.github.java-json-tools:jackson-coreutils:jar:2.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jaxb-provider:jar:5.0.9.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.8:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.8:compile
+[INFO] |  |     \- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  +- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile
+[INFO] |  +- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] |  \- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-services:jar:3.0.2:compile
+[INFO] |  +- org.glassfish:jakarta.json:jar:1.1.7-magnolia:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.26:compile
+[INFO] |  \- org.jboss.resteasy:resteasy-multipart-provider:jar:5.0.9.Final:compile
+[INFO] |     +- org.apache.james:apache-mime4j-dom:jar:0.8.11:compile
+[INFO] |     |  \- org.apache.james:apache-mime4j-core:jar:0.8.11:compile
+[INFO] |     \- org.apache.james:apache-mime4j-storage:jar:0.8.11:compile
+[INFO] +- junit:junit:jar:4.12:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO] |     \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] +- org.powermock:powermock-module-junit4:jar:2.0.2:test
+[INFO] |  \- org.powermock:powermock-module-junit4-common:jar:2.0.2:test
+[INFO] +- org.powermock:powermock-api-mockito2:jar:2.0.2:test
+[INFO] |  \- org.powermock:powermock-api-support:jar:2.0.2:test
+[INFO] +- org.powermock:powermock-core:jar:2.0.2:test
+[INFO] |  \- org.powermock:powermock-reflect:jar:2.0.2:test
+[INFO] \- org.apache.sling:org.apache.sling.testing.jcr-mock:jar:1.4.0:test
+[INFO]    \- org.apache.jackrabbit:jackrabbit-api:jar:2.8.0:test
+[INFO] 
+[INFO] -------< roosevelt.shopping.modules:single-page-app-integration >-------
+[INFO] Building SPA Integration Magnolia Module 3.0.2-SNAPSHOT            [5/8]
+[INFO]   from single-page-app-integration/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ single-page-app-integration ---
+[INFO] roosevelt.shopping.modules:single-page-app-integration:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- info.magnolia.cache:magnolia-cache-core:jar:6.0.3:compile
+[INFO] |  \- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] |     \- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] +- info.magnolia:magnolia-templating:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-rendering:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-i18n:jar:6.3.8:compile
+[INFO] |  |  \- org.jsoup:jsoup:jar:1.18.3:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  \- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  \- info.magnolia.core:magnolia-freemarker-support:jar:6.3.8:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- info.magnolia.templating:magnolia-jsonfn:jar:1.0.7:compile
+[INFO] |  \- info.magnolia.dam:magnolia-dam-templating:jar:4.0.6:compile
+[INFO] |     +- info.magnolia.dam:magnolia-dam-api:jar:4.0.6:compile
+[INFO] |     +- info.magnolia.dam:magnolia-dam-core:jar:4.0.6:compile
+[INFO] |     \- info.magnolia.dam:magnolia-dam-jcr:jar:4.0.6:compile
+[INFO] |        \- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-services:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.rest:magnolia-rest-integration:jar:3.0.2:compile
+[INFO] |  |  +- org.jboss.resteasy:resteasy-core-spi:jar:5.0.9.Final:compile
+[INFO] |  |  |  +- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  |  \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  |  +- org.jboss.resteasy:resteasy-core:jar:5.0.9.Final:compile
+[INFO] |  |  |  \- com.ibm.async:asyncutil:jar:0.1.0:compile
+[INFO] |  |  +- org.jboss.resteasy:resteasy-jackson2-provider:jar:5.0.9.Final:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.5:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.5:compile
+[INFO] |  |  |  \- com.github.java-json-tools:json-patch:jar:1.13:compile
+[INFO] |  |  |     +- com.github.java-json-tools:msg-simple:jar:1.2:compile
+[INFO] |  |  |     |  \- com.github.java-json-tools:btf:jar:1.3:compile
+[INFO] |  |  |     \- com.github.java-json-tools:jackson-coreutils:jar:2.0:compile
+[INFO] |  |  +- org.jboss.resteasy:resteasy-jaxb-provider:jar:5.0.9.Final:compile
+[INFO] |  |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.8:compile
+[INFO] |  |  |     +- org.glassfish.jaxb:txw2:jar:2.3.8:compile
+[INFO] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  |  \- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  +- org.glassfish:javax.json:jar:1.1.4:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.26:compile
+[INFO] |  \- org.jboss.resteasy:resteasy-multipart-provider:jar:5.0.9.Final:compile
+[INFO] |     +- com.sun.mail:jakarta.mail:jar:1.6.4:compile
+[INFO] |     |  \- com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[INFO] |     +- org.apache.james:apache-mime4j-dom:jar:0.8.11:compile
+[INFO] |     |  \- org.apache.james:apache-mime4j-core:jar:0.8.11:compile
+[INFO] |     \- org.apache.james:apache-mime4j-storage:jar:0.8.11:compile
+[INFO] +- info.magnolia:magnolia-core:test-jar:tests:6.3.8:test
+[INFO] +- org.mockito:mockito-core:jar:4.11.0:test
+[INFO] |  \- net.bytebuddy:byte-buddy-agent:jar:1.12.19:test
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO]    \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] 
+[INFO] -------------< roosevelt.content.workflow:custom-workflow >-------------
+[INFO] Building custom-workflow Magnolia Module 3.0.2-SNAPSHOT            [6/8]
+[INFO]   from custom-workflow/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ custom-workflow ---
+[INFO] roosevelt.content.workflow:custom-workflow:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- info.magnolia.workflow:magnolia-module-workflow-jbpm:jar:7.0.3:compile
+[INFO] |  +- info.magnolia:magnolia-i18n:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] |  |  \- org.jsoup:jsoup:jar:1.18.3:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  +- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  |  \- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] |  +- info.magnolia.task:magnolia-task-management:jar:2.0.0:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-api:jar:6.3.8:compile
+[INFO] |  |  +- com.vaadin:vaadin-server:jar:8.27.3:compile
+[INFO] |  |  |  +- com.vaadin:vaadin-sass-compiler:jar:0.9.13:provided
+[INFO] |  |  |  |  +- org.w3c.css:sac:jar:1.3:provided
+[INFO] |  |  |  |  \- com.vaadin.external.flute:flute:jar:1.3.0.gg2:provided
+[INFO] |  |  |  +- com.vaadin:license-checker:jar:1.12.14:compile
+[INFO] |  |  |  |  +- com.github.oshi:oshi-core:jar:6.4.0:compile
+[INFO] |  |  |  |  |  +- net.java.dev.jna:jna:jar:5.13.0:compile
+[INFO] |  |  |  |  |  \- net.java.dev.jna:jna-platform:jar:5.13.0:compile
+[INFO] |  |  |  |  +- com.nimbusds:nimbus-jose-jwt:jar:9.37.3:compile
+[INFO] |  |  |  |  +- org.lucee:jcip-annotations:jar:1.0.0:compile
+[INFO] |  |  |  |  \- com.vaadin:open:jar:8.5.0.1:compile
+[INFO] |  |  |  \- com.vaadin.external:gentyref:jar:1.2.0.vaadin1:compile
+[INFO] |  |  \- com.vaadin:vaadin-compatibility-server:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-ui-vaadin-common-widgets:jar:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-ckeditor:jar:1.3.19:compile
+[INFO] |  |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-aceeditor:jar:1.3.19:compile
+[INFO] |  |  |  +- org.vaadin.addons:vaadin-combobox-multiselect:jar:2.7:compile
+[INFO] |  |  |  \- org.vaadin.addons:gwt-graphics:jar:1.0.0:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-resurface-theme:jar:6.3.8:compile
+[INFO] |  |  |  \- com.vaadin:vaadin-themes:jar:8.27.3:compile
+[INFO] |  |  +- info.magnolia.core:magnolia-freemarker-support:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.types:magnolia-content-types:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.icons:magnolia-icons:jar:29:compile
+[INFO] |  |  +- com.vaadin:vaadin-shared:jar:8.27.3:compile
+[INFO] |  |  +- org.vaadin.patrik:GridFastNavigation:jar:2.6.3:compile
+[INFO] |  |  +- com.vaadin:vaadin-compatibility-shared:jar:8.27.3:compile
+[INFO] |  |  +- org.vaadin.addons:aceeditor:jar:0.8.15:compile
+[INFO] |  |  +- org.vaadin.addons:extended-token-field:jar:0.3.0:compile
+[INFO] |  |  +- org.vaadin.alump:ckeditor:jar:0.1.2:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-context-menu:jar:1.3.19:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-contexthelp:jar:1.3.19:compile
+[INFO] |  |  +- com.vaadin.external.gwt:gwt-elemental:jar:2.8.2.vaadin2:compile
+[INFO] |  |  +- io.reactivex.rxjava2:rxjava:jar:2.2.21:compile
+[INFO] |  |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  +- com.google.code.gson:gson:jar:2.11.0:compile
+[INFO] |  |  \- org.devlib.schmidt:imageinfo:jar:1.9:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-admincentral:jar:6.3.0:compile
+[INFO] |  |  +- info.magnolia.core:magnolia-virtual-uri:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.admincentral:magnolia-admincentral:jar:6.3.5:compile
+[INFO] |  |  |  +- info.magnolia.periscope:magnolia-periscope-core:jar:2.0.1:compile
+[INFO] |  |  |  +- info.magnolia.periscope:magnolia-periscope-api:jar:2.0.1:compile
+[INFO] |  |  |  +- info.magnolia.periscope:magnolia-speech-recognition:jar:2.0.1:compile
+[INFO] |  |  |  +- com.vaadin.addon:date-range-field:jar:0.2.0:compile
+[INFO] |  |  |  \- com.vaadin:vaadin-push:jar:8.27.3:compile
+[INFO] |  |  |     \- com.vaadin.external.atmosphere:atmosphere-runtime:jar:2.4.30.vaadin7:compile
+[INFO] |  |  |        \- com.vaadin.external.slf4j:vaadin-slf4j-jdk14:jar:1.6.1:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-ui-framework-compatibility:jar:6.3.8:compile
+[INFO] |  |  |  +- org.apache.commons:commons-compress:jar:1.26.0:compile
+[INFO] |  |  |  +- org.vaadin.addon:easyuploads:jar:8.0.1:compile
+[INFO] |  |  |  |  \- org.vaadin:viritin-v7-compatibility:jar:1.0:compile
+[INFO] |  |  |  |     +- org.vaadin:viritin:jar:2.1:compile
+[INFO] |  |  |  |     +- org.vaadin.addon:confirmdialog:jar:3.2.0:compile
+[INFO] |  |  |  |     +- org.commonjava.googlecode.markdown4j:markdown4j:jar:2.2-cj-1.1:compile
+[INFO] |  |  |  |     \- javax.el:javax.el-api:jar:2.2.4:compile
+[INFO] |  |  |  \- com.jhlabs:filters:jar:2.0.235-1:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-ui-framework-jcr:jar:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia.imaging:magnolia-imaging-support:jar:4.0.3:compile
+[INFO] |  |  |  +- info.magnolia.imaging:magnolia-imaging:jar:4.0.3:compile
+[INFO] |  |  |  |  +- info.magnolia:magnolia-rendering:jar:6.3.8:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.imageio:imageio-jpeg:jar:3.12.0:compile
+[INFO] |  |  |  |  |  +- com.twelvemonkeys.imageio:imageio-core:jar:3.12.0:compile
+[INFO] |  |  |  |  |  +- com.twelvemonkeys.imageio:imageio-metadata:jar:3.12.0:compile
+[INFO] |  |  |  |  |  +- com.twelvemonkeys.common:common-lang:jar:3.12.0:compile
+[INFO] |  |  |  |  |  +- com.twelvemonkeys.common:common-io:jar:3.12.0:compile
+[INFO] |  |  |  |  |  \- com.twelvemonkeys.common:common-image:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.imageio:imageio-tiff:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.github.usefulness:webp-imageio:jar:0.9.0:compile
+[INFO] |  |  |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:2.1.0:compile
+[INFO] |  |  |  |  |     \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |  |  |  +- com.alexdupre:pngj:jar:2.1.2.1:compile
+[INFO] |  |  |  |  \- com.drewnoakes:metadata-extractor:jar:2.18.0:compile
+[INFO] |  |  |  |     \- com.adobe.xmp:xmpcore:jar:6.1.11:compile
+[INFO] |  |  |  \- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  |  \- info.magnolia.ui:magnolia-ui-vaadin-theme:jar:6.3.8:compile
+[INFO] |  |     \- com.vaadin:vaadin-compatibility-themes:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.scheduler:magnolia-module-scheduler:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.workflow:magnolia-module-workflow:jar:7.0.3:compile
+[INFO] |  +- info.magnolia.workflow:drools-jcr-persistence:jar:7.0.3:compile
+[INFO] |  +- info.magnolia.workflow:jbpm-jcr-persistence:jar:7.0.3:compile
+[INFO] |  |  +- org.jbpm:jbpm-flow:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.kie.soup:kie-soup-commons:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.kie:kie-dmn-api:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.kie:kie-dmn-feel:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-dmn-model:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.antlr:antlr4-runtime:jar:4.9.2:compile
+[INFO] |  |  |  |  +- com.github.javaparser:javaparser-core:jar:3.23.1:compile
+[INFO] |  |  |  |  \- ch.obermuhlner:big-math:jar:2.0.1:compile
+[INFO] |  |  |  +- org.kie:kie-dmn-core:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-dmn-backend:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.drools:drools-ruleunit:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.drools:drools-canonical-model:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.drools:drools-model-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  |  \- org.drools:drools-mvel-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.drools:drools-mvel-parser:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.drools:drools-alphanetwork-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  \- org.jpmml:pmml-model:jar:1.5.1:compile
+[INFO] |  |  |  |     \- org.jpmml:pmml-agent:jar:1.5.1:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile
+[INFO] |  |  +- org.drools:drools-serialization-protobuf:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.jbpm:jbpm-persistence-api:jar:7.74.1.Final:compile
+[INFO] |  +- org.drools:drools-persistence-api:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.drools:drools-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.kie:kie-memory-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.antlr:antlr-runtime:jar:3.5.2:compile
+[INFO] |  |  |  \- com.thoughtworks.xstream:xstream:jar:1.4.21:compile
+[INFO] |  |  |     \- io.github.x-stream:mxparser:jar:1.2.2:compile
+[INFO] |  |  |        \- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  |  +- com.google.protobuf:protobuf-java:jar:3.25.5:compile
+[INFO] |  |  \- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile
+[INFO] |  +- info.magnolia.ocm:jackrabbit-ocm:jar:3.0.0-magnolia:compile
+[INFO] |  |  +- commons-lang:commons-lang:jar:2.1:compile
+[INFO] |  |  \- org.apache.derby:derby:jar:10.14.3.0-magnolia:compile
+[INFO] |  +- org.jbpm:jbpm-runtime-manager:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.eclipse.aether:aether-api:jar:1.1.0:compile
+[INFO] |  |  +- org.kie.soup:kie-soup-project-datamodel-commons:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- org.kie.soup:kie-soup-project-datamodel-api:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.drools:drools-ecj:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.mvel:mvel2:jar:2.5.2.Final:compile
+[INFO] |  |  \- org.jbpm:jbpm-human-task-workitems:jar:7.74.1.Final:compile
+[INFO] |  +- org.jbpm:jbpm-bpmn2:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.jbpm:jbpm-flow-builder:jar:7.74.1.Final:compile
+[INFO] |  +- org.jbpm:jbpm-persistence-jpa:jar:7.74.1.Final:compile
+[INFO] |  |  \- jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile
+[INFO] |  +- org.drools:drools-core:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.kie.soup:kie-soup-xstream:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.drools:drools-core-reflective:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.drools:drools-core-dynamic:jar:7.74.1.Final:runtime
+[INFO] |  +- org.drools:drools-persistence-jpa:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.drools:drools-mvel:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.javassist:javassist:jar:3.30.2-GA:compile
+[INFO] |  +- org.kie:kie-internal:jar:7.74.1.Final:compile
+[INFO] |  +- org.kie:kie-api:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.kie.soup:kie-soup-maven-support:jar:7.74.1.Final:compile
+[INFO] |  \- org.quartz-scheduler:quartz:jar:2.5.0:compile
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO]       \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] 
+[INFO] ---------< roosevelt.shopping.modules:client-environment-app >----------
+[INFO] Building client-environment-app Magnolia Module 3.0.2-SNAPSHOT     [7/8]
+[INFO]   from client-environment-app/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ client-environment-app ---
+[INFO] roosevelt.shopping.modules:client-environment-app:jar:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] |  +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |  |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |  |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |  +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |  +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |  |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |  |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |  |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |  |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |  |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |  +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |  |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |  |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-retry:jar:2.2.0:runtime
+[INFO] |  |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |  |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |  +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |  |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |  |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |  |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |  +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |  +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |  +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |  +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |  \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] \- junit:junit:jar:4.11:test
+[INFO]    \- org.hamcrest:hamcrest-core:jar:3.0:test
+[INFO]       \- org.hamcrest:hamcrest:jar:3.0:test
+[INFO] 
+[INFO] ---------------< roosevelt.shopping:magnolia-cms-webapp >---------------
+[INFO] Building magnolia-cms-webapp: webapp 3.0.2-SNAPSHOT                [8/8]
+[INFO]   from magnolia-cms-webapp/pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[WARNING] org.apache.maven.plugins/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] org.codehaus.mojo/maven-metadata.xml failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/common-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/modules/common-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/789 BProgress (1): 789 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/common-app/3.0.2-SNAPSHOT/maven-metadata.xml (789 B at 23 kB/s)
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/plans-catalog-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/modules/plans-catalog-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/796 BProgress (1): 796 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/plans-catalog-app/3.0.2-SNAPSHOT/maven-metadata.xml (796 B at 38 kB/s)
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/turnkey-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/modules/turnkey-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/790 BProgress (1): 790 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/turnkey-app/3.0.2-SNAPSHOT/maven-metadata.xml (790 B at 24 kB/s)
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/single-page-app-integration/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/modules/single-page-app-integration/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/806 BProgress (1): 806 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/single-page-app-integration/3.0.2-SNAPSHOT/maven-metadata.xml (806 B at 21 kB/s)
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/content/workflow/custom-workflow/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/content/workflow/custom-workflow/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/794 BProgress (1): 794 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/content/workflow/custom-workflow/3.0.2-SNAPSHOT/maven-metadata.xml (794 B at 16 kB/s)
+Downloading from roosevelt-central: https://artifactory.renhsc.com:443/artifactory/maven-virtual/roosevelt/shopping/modules/client-environment-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Downloading from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/client-environment-app/3.0.2-SNAPSHOT/maven-metadata.xml
+Progress (1): 435/801 BProgress (1): 801 B                       Downloaded from ETS-snapshots: https://artifactory.renhsc.com:443/artifactory/libs-snapshot/roosevelt/shopping/modules/client-environment-app/3.0.2-SNAPSHOT/maven-metadata.xml (801 B at 32 kB/s)
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ magnolia-cms-webapp ---
+[INFO] roosevelt.shopping:magnolia-cms-webapp:war:3.0.2-SNAPSHOT
+[INFO] +- info.magnolia.tools:magnolia-cors-filter:jar:1.3:compile
+[INFO] |  \- info.magnolia:magnolia-core:jar:6.3.8:compile
+[INFO] |     +- io.smallrye.config:smallrye-config:jar:2.13.3:compile
+[INFO] |     +- io.smallrye.config:smallrye-config-core:jar:2.13.3:compile
+[INFO] |     |  +- io.smallrye.common:smallrye-common-annotation:jar:1.13.2:compile
+[INFO] |     |  +- io.smallrye.common:smallrye-common-expression:jar:1.13.2:compile
+[INFO] |     |  |  \- io.smallrye.common:smallrye-common-function:jar:1.13.2:compile
+[INFO] |     |  +- io.smallrye.common:smallrye-common-constraint:jar:1.13.2:compile
+[INFO] |     |  +- io.smallrye.common:smallrye-common-classloader:jar:1.13.2:compile
+[INFO] |     |  \- org.ow2.asm:asm:jar:9.4:compile
+[INFO] |     +- io.smallrye.config:smallrye-config-source-yaml:jar:2.13.3:compile
+[INFO] |     +- io.smallrye.config:smallrye-config-common:jar:2.13.3:compile
+[INFO] |     +- io.smallrye:smallrye-health:jar:4.1.0:compile
+[INFO] |     |  +- io.smallrye:smallrye-health-api:jar:4.1.0:compile
+[INFO] |     |  |  \- io.smallrye.reactive:mutiny:jar:2.5.3:compile
+[INFO] |     |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |     |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |     |  \- org.eclipse.parsson:jakarta.json:jar:1.1.5:compile
+[INFO] |     +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |     +- io.micrometer:micrometer-core:jar:1.14.1:compile
+[INFO] |     |  +- io.micrometer:micrometer-commons:jar:1.14.1:compile
+[INFO] |     |  +- io.micrometer:micrometer-observation:jar:1.14.1:compile
+[INFO] |     |  +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |     |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] |     +- io.micrometer:micrometer-registry-jmx:jar:1.14.1:compile
+[INFO] |     |  \- io.dropwizard.metrics:metrics-jmx:jar:4.2.28:compile
+[INFO] |     |     \- io.dropwizard.metrics:metrics-core:jar:4.2.28:compile
+[INFO] |     +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.2.0:compile
+[INFO] |     +- io.github.resilience4j:resilience4j-micrometer:jar:2.2.0:compile
+[INFO] |     |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.2.0:runtime
+[INFO] |     |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.2.0:runtime
+[INFO] |     |  \- io.github.resilience4j:resilience4j-timelimiter:jar:2.2.0:runtime
+[INFO] |     +- org.mindrot:jbcrypt:jar:0.4:compile
+[INFO] |     +- org.bouncycastle:bcprov-jdk18on:jar:1.79:compile
+[INFO] |     +- com.mycila.guice.extensions:mycila-guice-jsr250:jar:5.0:compile
+[INFO] |     |  \- com.mycila.guice.extensions:mycila-guice-injection:jar:5.0:compile
+[INFO] |     +- com.mycila.guice.extensions:mycila-guice-closeable:jar:5.0:compile
+[INFO] |     +- org.safehaus.jug:jug:jar:asl:2.0.0:compile
+[INFO] |     +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.24.2:compile
+[INFO] |     +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile
+[INFO] |     +- jaxen:jaxen:jar:2.0.0:compile
+[INFO] |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.5:compile
+[INFO] |     |  +- org.codehaus.woodstox:stax2-api:jar:4.2.1:compile
+[INFO] |     |  \- com.fasterxml.woodstox:woodstox-core:jar:6.4.0:compile
+[INFO] |     +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] |     +- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.13.5:compile
+[INFO] |     +- commons-fileupload:commons-fileupload:jar:1.5:compile
+[INFO] |     +- org.apache.httpcomponents:httpmime:jar:4.5.14:compile
+[INFO] |     +- org.yaml:snakeyaml:jar:1.33:compile
+[INFO] |     +- org.apache.jackrabbit:jackrabbit-spi:jar:2.22.0:compile
+[INFO] |     +- org.apache.jackrabbit:oak-jackrabbit-api:jar:1.48.0:compile
+[INFO] |     +- org.apache.lucene:lucene-core:jar:3.6.0:compile
+[INFO] |     +- commons-net:commons-net:jar:3.11.1:compile
+[INFO] |     +- net.bytebuddy:byte-buddy:jar:1.14.18:compile
+[INFO] |     +- org.objenesis:objenesis:jar:3.4:compile
+[INFO] |     \- org.apache.tika:tika-core:jar:2.4.1:compile
+[INFO] +- info.magnolia.dx:magnolia-dx-core-webapp:pom:6.3.8:compile
+[INFO] |  +- info.magnolia.bundle:magnolia-community-webapp:war:6.3.8:compile
+[INFO] |  +- info.magnolia.bundle:magnolia-community-webapp:pom:6.3.8:compile
+[INFO] |  |  +- info.magnolia:magnolia-empty-webapp:war:6.3.8:compile
+[INFO] |  |  +- info.magnolia:magnolia-empty-webapp:pom:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia.security:magnolia-security-app:jar:7.0.2:compile
+[INFO] |  |  |  +- info.magnolia.jcrbrowser:magnolia-jcr-browser-app:jar:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia:magnolia-jaas:jar:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia.cache:magnolia-cache-ehcache3:jar:6.0.3:compile
+[INFO] |  |  |  |  +- org.ehcache.modules:ehcache-api:jar:3.10.8:compile
+[INFO] |  |  |  |  +- org.ehcache.modules:ehcache-impl:jar:3.10.8:compile
+[INFO] |  |  |  |  |  +- org.terracotta:offheap-store:jar:2.5.3:runtime
+[INFO] |  |  |  |  |  +- org.ehcache:sizeof:jar:0.4.3:runtime
+[INFO] |  |  |  |  |  \- org.terracotta:terracotta-utilities-tools:jar:0.0.15:runtime
+[INFO] |  |  |  |  \- org.ehcache.modules:ehcache-core:jar:3.10.8:compile
+[INFO] |  |  |  |     \- org.terracotta:statistics:jar:2.1.2:runtime
+[INFO] |  |  |  +- info.magnolia.bundle:magnolia-community-product-descriptor:jar:6.3.8:compile
+[INFO] |  |  |  +- info.magnolia.resources:magnolia-resources:jar:4.0.2:compile
+[INFO] |  |  |  +- info.magnolia.resources:magnolia-resources-app:jar:4.0.2:compile
+[INFO] |  |  |  +- info.magnolia.resources:magnolia-resources-templating:jar:4.0.2:compile
+[INFO] |  |  |  +- org.apache.tika:tika-parsers-standard-package:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-apple-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- org.apache.tika:tika-parser-zip-commons:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- com.googlecode.plist:dd-plist:jar:1.23:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-audiovideo-module:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-cad-module:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-code-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- org.codelibs:jhighlight:jar:1.1.0:compile
+[INFO] |  |  |  |  |  +- org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:compile
+[INFO] |  |  |  |  |  +- com.epam:parso:jar:2.0.14:compile
+[INFO] |  |  |  |  |  \- org.tallison:jmatio:jar:1.5:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-crypto-module:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-digest-commons:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-font-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.apache.pdfbox:fontbox:jar:2.0.26:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-html-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.apache.tika:tika-parser-html-commons:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-image-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- com.github.jai-imageio:jai-imageio-core:jar:1.4.0:compile
+[INFO] |  |  |  |  |  \- org.apache.pdfbox:jbig2-imageio:jar:3.0.4:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-mail-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.apache.tika:tika-parser-mail-commons:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-microsoft-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- com.pff:java-libpst:jar:0.9.3:compile
+[INFO] |  |  |  |  |  +- org.apache.poi:poi:jar:5.4.1:compile
+[INFO] |  |  |  |  |  |  \- com.zaxxer:SparseBitSet:jar:1.3:compile
+[INFO] |  |  |  |  |  +- org.apache.poi:poi-scratchpad:jar:5.4.1:compile
+[INFO] |  |  |  |  |  |  \- org.apache.commons:commons-math3:jar:3.6.1:compile
+[INFO] |  |  |  |  |  +- org.apache.poi:poi-ooxml:jar:5.4.1:compile
+[INFO] |  |  |  |  |  |  +- org.apache.poi:poi-ooxml-lite:jar:5.4.1:compile
+[INFO] |  |  |  |  |  |  +- org.apache.xmlbeans:xmlbeans:jar:5.3.0:compile
+[INFO] |  |  |  |  |  |  \- com.github.virtuald:curvesapi:jar:1.08:compile
+[INFO] |  |  |  |  |  +- com.healthmarketscience.jackcess:jackcess:jar:4.0.1:compile
+[INFO] |  |  |  |  |  \- com.healthmarketscience.jackcess:jackcess-encrypt:jar:4.0.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-miscoffice-module:jar:2.4.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-news-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- com.rometools:rome:jar:1.18.0:compile
+[INFO] |  |  |  |  |     \- com.rometools:rome-utils:jar:1.18.0:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-ocr-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.apache.commons:commons-exec:jar:1.3:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-pdf-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- org.apache.pdfbox:pdfbox:jar:2.0.26:compile
+[INFO] |  |  |  |  |  +- org.apache.pdfbox:pdfbox-tools:jar:2.0.26:compile
+[INFO] |  |  |  |  |  |  \- org.apache.pdfbox:pdfbox-debugger:jar:2.0.26:compile
+[INFO] |  |  |  |  |  \- org.apache.pdfbox:jempbox:jar:1.8.16:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-pkg-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- org.tukaani:xz:jar:1.9:compile
+[INFO] |  |  |  |  |  +- org.brotli:dec:jar:0.1.2:compile
+[INFO] |  |  |  |  |  \- com.github.junrar:junrar:jar:7.5.2:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-text-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:compile
+[INFO] |  |  |  |  |  \- org.apache.commons:commons-csv:jar:1.9.0:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-webarchive-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.netpreserve:jwarc:jar:0.18.1:compile
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-xml-module:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- xerces:xercesImpl:jar:2.8.1:test
+[INFO] |  |  |  |  +- org.apache.tika:tika-parser-xmp-commons:jar:2.4.1:compile
+[INFO] |  |  |  |  |  \- org.apache.pdfbox:xmpbox:jar:2.0.26:compile
+[INFO] |  |  |  |  +- org.gagravarr:vorbis-java-tika:jar:0.8:compile
+[INFO] |  |  |  |  \- org.gagravarr:vorbis-java-core:jar:0.8:compile
+[INFO] |  |  |  +- org.bouncycastle:bcmail-jdk18on:jar:1.79:compile
+[INFO] |  |  |  |  \- org.bouncycastle:bcpkix-jdk18on:jar:1.79:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-cs:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-de:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-es:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-fr:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-hr:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-it:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-ja:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-ko:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-nl:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-pl:jar:2.0.0:compile
+[INFO] |  |  |  +- info.magnolia.lang:magnolia-lang-zh_CN:jar:2.0.0:compile
+[INFO] |  |  |  \- info.magnolia.lang:magnolia-lang-zh_TW:jar:2.0.0:compile
+[INFO] |  |  +- info.magnolia.javascript-models:magnolia-module-javascript-models:jar:3.0.0:compile
+[INFO] |  |  |  +- org.graalvm.truffle:truffle-api:jar:23.0.3:compile
+[INFO] |  |  |  +- org.graalvm.sdk:graal-sdk:jar:23.0.3:compile
+[INFO] |  |  |  +- org.graalvm.js:js:jar:23.0.3:runtime
+[INFO] |  |  |  |  +- org.graalvm.regex:regex:jar:23.0.3:runtime
+[INFO] |  |  |  |  \- com.ibm.icu:icu4j:jar:72.1:runtime
+[INFO] |  |  |  +- org.graalvm.js:js-scriptengine:jar:23.0.3:compile
+[INFO] |  |  |  +- org.graalvm.tools:profiler:jar:23.0.3:runtime
+[INFO] |  |  |  \- org.graalvm.tools:chromeinspector:jar:23.0.3:runtime
+[INFO] |  |  +- info.magnolia.passwordmanager:magnolia-password-manager-core:jar:2.0.0:compile
+[INFO] |  |  +- info.magnolia.passwordmanager:magnolia-password-manager-app:jar:2.0.0:compile
+[INFO] |  |  +- info.magnolia:magnolia-module-mail:jar:6.0.0:compile
+[INFO] |  |  |  +- com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[INFO] |  |  |  +- com.google.api-client:google-api-client:jar:2.7.0:compile
+[INFO] |  |  |  |  +- com.google.auth:google-auth-library-credentials:jar:1.23.0:compile
+[INFO] |  |  |  |  +- com.google.auth:google-auth-library-oauth2-http:jar:1.23.0:compile
+[INFO] |  |  |  |  |  \- com.google.auto.value:auto-value-annotations:jar:1.10.4:compile
+[INFO] |  |  |  |  +- com.google.http-client:google-http-client-gson:jar:1.45.0:compile
+[INFO] |  |  |  |  \- com.google.http-client:google-http-client-apache-v2:jar:1.45.0:compile
+[INFO] |  |  |  +- com.google.http-client:google-http-client:jar:1.45.1:compile
+[INFO] |  |  |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  |  |  +- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |  |  |  |  +- io.grpc:grpc-context:jar:1.68.2:compile
+[INFO] |  |  |  |  |  \- io.grpc:grpc-api:jar:1.68.2:runtime
+[INFO] |  |  |  |  +- io.opencensus:opencensus-api:jar:0.31.1:compile
+[INFO] |  |  |  |  \- io.opencensus:opencensus-contrib-http-util:jar:0.31.1:compile
+[INFO] |  |  |  +- com.google.http-client:google-http-client-jackson2:jar:1.45.1:compile
+[INFO] |  |  |  +- com.google.oauth-client:google-oauth-client:jar:1.36.0:compile
+[INFO] |  |  |  \- com.microsoft.azure:msal4j:jar:1.17.3:compile
+[INFO] |  |  |     \- com.nimbusds:oauth2-oidc-sdk:jar:11.18:compile
+[INFO] |  |  |        +- com.nimbusds:content-type:jar:2.3:compile
+[INFO] |  |  |        \- com.nimbusds:lang-tag:jar:1.7:compile
+[INFO] |  |  +- info.magnolia.categorization:magnolia-categorization-support:jar:3.0.1:compile
+[INFO] |  |  +- info.magnolia.categorization:magnolia-categorization-app:jar:3.0.1:compile
+[INFO] |  |  +- info.magnolia.categorization:magnolia-categorization:jar:3.0.1:compile
+[INFO] |  |  +- info.magnolia.groovy:magnolia-groovy:jar:4.0.0:compile
+[INFO] |  |  |  +- org.apache.groovy:groovy:jar:4.0.24:compile
+[INFO] |  |  |  +- org.apache.groovy:groovy-xml:jar:4.0.24:compile
+[INFO] |  |  |  +- org.apache.groovy:groovy-cli-commons:jar:4.0.24:compile
+[INFO] |  |  |  +- org.webjars:jquery:jar:3.7.1:compile
+[INFO] |  |  |  \- org.webjars:jquery.terminal:jar:2.34.1:compile
+[INFO] |  |  +- info.magnolia.messages:magnolia-messages-app:jar:6.3.0:compile
+[INFO] |  |  +- info.magnolia.imaging:magnolia-imaging:jar:4.0.3:compile
+[INFO] |  |  |  +- com.twelvemonkeys.imageio:imageio-jpeg:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.imageio:imageio-core:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.imageio:imageio-metadata:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.common:common-lang:jar:3.12.0:compile
+[INFO] |  |  |  |  +- com.twelvemonkeys.common:common-io:jar:3.12.0:compile
+[INFO] |  |  |  |  \- com.twelvemonkeys.common:common-image:jar:3.12.0:compile
+[INFO] |  |  |  +- com.twelvemonkeys.imageio:imageio-tiff:jar:3.12.0:compile
+[INFO] |  |  |  +- com.github.usefulness:webp-imageio:jar:0.9.0:compile
+[INFO] |  |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:2.1.0:compile
+[INFO] |  |  |  |     \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |  |  +- com.alexdupre:pngj:jar:2.1.2.1:compile
+[INFO] |  |  |  \- com.drewnoakes:metadata-extractor:jar:2.18.0:compile
+[INFO] |  |  |     \- com.adobe.xmp:xmpcore:jar:6.1.11:compile
+[INFO] |  |  +- info.magnolia.dam:magnolia-dam-app-jcr:jar:4.0.6:compile
+[INFO] |  |  |  \- com.wcs.wcslib:wcslib-vaadin-widget-multifileupload:jar:4.0:compile
+[INFO] |  |  +- info.magnolia.dam:magnolia-dam-templating:jar:4.0.6:compile
+[INFO] |  |  +- info.magnolia.dam:magnolia-dam-imaging:jar:4.0.6:compile
+[INFO] |  |  +- info.magnolia.dam:magnolia-dam-widget:jar:4.0.6:compile
+[INFO] |  |  |  \- com.google.gwt:gwt-user:jar:2.9.0:provided
+[INFO] |  |  +- info.magnolia.pages:magnolia-spa-rendering:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.pages:magnolia-pages-jcr-rest:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.pages:magnolia-site-spa-rendering:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.pages:magnolia-pages-editor-external:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.rest:magnolia-rest-content-delivery:jar:3.0.2:compile
+[INFO] |  |  |  \- org.glassfish:jakarta.json:jar:1.1.7-magnolia:compile
+[INFO] |  |  +- info.magnolia.rest:magnolia-rest-jcr-delivery:jar:3.0.2:compile
+[INFO] |  |  +- info.magnolia.restclient:magnolia-rest-client:jar:3.0.3:compile
+[INFO] |  |  |  +- org.jboss.resteasy:resteasy-client:jar:5.0.9.Final:compile
+[INFO] |  |  |  +- org.jboss.resteasy:resteasy-client-api:jar:5.0.9.Final:compile
+[INFO] |  |  |  +- io.swagger.parser.v3:swagger-parser-core:jar:2.1.24:compile
+[INFO] |  |  |  \- io.swagger.parser.v3:swagger-parser-v3:jar:2.1.24:compile
+[INFO] |  |  |     \- io.swagger.parser.v3:swagger-parser-safe-url-resolver:jar:2.1.24:compile
+[INFO] |  |  +- info.magnolia.restclient:magnolia-rest-client-app:jar:3.0.3:compile
+[INFO] |  |  |  +- org.jeasy:easy-random-core:jar:4.0.0:compile
+[INFO] |  |  |  \- com.github.dzieciou.testing:curl-logger:jar:1.0.5:compile
+[INFO] |  |  +- info.magnolia.templating:magnolia-templating-essentials-imaging:jar:3.0.2:compile
+[INFO] |  |  |  \- info.magnolia.site:magnolia-site-themes:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.templating:magnolia-templating-kit-2:jar:3.0.2:compile
+[INFO] |  |  +- info.magnolia.site:magnolia-site-jcr:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.cache:magnolia-cache-app:jar:6.0.3:compile
+[INFO] |  |  +- info.magnolia.cache:magnolia-cache-browser-app:jar:6.0.3:compile
+[INFO] |  |  |  +- com.cedarsoftware:json-io:jar:4.26.0:compile
+[INFO] |  |  |  \- com.cedarsoftware:java-util:jar:2.9.0:compile
+[INFO] |  |  +- info.magnolia.log:magnolia-log-tools:jar:2.0.0:compile
+[INFO] |  |  +- info.magnolia.jcrtools:magnolia-jcr-tools:jar:2.0.0:compile
+[INFO] |  |  \- info.magnolia.periscope:magnolia-periscope-core:jar:2.0.1:compile
+[INFO] |  +- info.magnolia:magnolia-license:jar:2.0.0:compile
+[INFO] |  |  +- org.bouncycastle:bcpg-jdk18on:jar:1.79:compile
+[INFO] |  |  +- org.bouncycastle:bcutil-jdk18on:jar:1.79:compile
+[INFO] |  |  \- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  +- info.magnolia.dx:magnolia-module-enterprise:jar:6.3.8:compile
+[INFO] |  |  \- info.magnolia.about:magnolia-about-app:jar:6.3.0:compile
+[INFO] |  |     \- org.projectlombok:lombok:jar:1.18.36:provided
+[INFO] |  +- info.magnolia.dx:magnolia-dx-core-product-descriptor:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.workflow:magnolia-module-workflow:jar:7.0.3:compile
+[INFO] |  +- info.magnolia.workflow:magnolia-module-workflow-jbpm:jar:7.0.3:compile
+[INFO] |  |  +- info.magnolia.workflow:drools-jcr-persistence:jar:7.0.3:compile
+[INFO] |  |  +- info.magnolia.workflow:jbpm-jcr-persistence:jar:7.0.3:compile
+[INFO] |  |  |  +- org.jbpm:jbpm-flow:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie.soup:kie-soup-commons:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-dmn-api:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-dmn-feel:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  |  +- org.kie:kie-dmn-model:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  |  +- com.github.javaparser:javaparser-core:jar:3.23.1:compile
+[INFO] |  |  |  |  |  \- ch.obermuhlner:big-math:jar:2.0.1:compile
+[INFO] |  |  |  |  \- org.kie:kie-dmn-core:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.kie:kie-dmn-backend:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.drools:drools-ruleunit:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.drools:drools-canonical-model:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.drools:drools-model-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     |  \- org.drools:drools-mvel-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.drools:drools-mvel-parser:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     +- org.drools:drools-alphanetwork-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |     \- org.jpmml:pmml-model:jar:1.5.1:compile
+[INFO] |  |  |  |        \- org.jpmml:pmml-agent:jar:1.5.1:compile
+[INFO] |  |  |  +- org.drools:drools-serialization-protobuf:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- org.jbpm:jbpm-persistence-api:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.drools:drools-persistence-api:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.drools:drools-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.kie:kie-memory-compiler:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  +- org.antlr:antlr-runtime:jar:3.5.2:compile
+[INFO] |  |  |  |  \- com.thoughtworks.xstream:xstream:jar:1.4.21:compile
+[INFO] |  |  |  |     \- io.github.x-stream:mxparser:jar:1.2.2:compile
+[INFO] |  |  |  |        \- xmlpull:xmlpull:jar:1.1.3.1:compile
+[INFO] |  |  |  +- com.google.protobuf:protobuf-java:jar:3.25.5:compile
+[INFO] |  |  |  \- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile
+[INFO] |  |  +- info.magnolia.ocm:jackrabbit-ocm:jar:3.0.0-magnolia:compile
+[INFO] |  |  +- org.jbpm:jbpm-runtime-manager:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.eclipse.aether:aether-api:jar:1.1.0:compile
+[INFO] |  |  |  +- org.kie.soup:kie-soup-project-datamodel-commons:jar:7.74.1.Final:compile
+[INFO] |  |  |  |  \- org.kie.soup:kie-soup-project-datamodel-api:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.drools:drools-ecj:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.mvel:mvel2:jar:2.5.2.Final:compile
+[INFO] |  |  |  \- org.jbpm:jbpm-human-task-workitems:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.jbpm:jbpm-bpmn2:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- org.jbpm:jbpm-flow-builder:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.jbpm:jbpm-persistence-jpa:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile
+[INFO] |  |  +- org.drools:drools-core:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.kie.soup:kie-soup-xstream:jar:7.74.1.Final:compile
+[INFO] |  |  |  +- org.drools:drools-core-reflective:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- org.drools:drools-core-dynamic:jar:7.74.1.Final:runtime
+[INFO] |  |  +- org.drools:drools-persistence-jpa:jar:7.74.1.Final:compile
+[INFO] |  |  |  \- org.drools:drools-mvel:jar:7.74.1.Final:compile
+[INFO] |  |  +- org.kie:kie-internal:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.quartz-scheduler:quartz:jar:2.5.0:compile
+[INFO] |  +- info.magnolia.workflow:magnolia-module-workflow-pages:jar:7.0.3:compile
+[INFO] |  |  \- info.magnolia.task:magnolia-tasks-app:jar:6.3.1:compile
+[INFO] |  +- info.magnolia.dependencies:magnolia-content-dependencies-core:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.dependencies:magnolia-content-dependencies-ui:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.diff:magnolia-diff:jar:3.0.1:compile
+[INFO] |  |  \- org.outerj.daisy:daisydiff:jar:1.2.4-magnolia:compile
+[INFO] |  |     \- org.eclipse.core:eclipse-core-runtime:jar:2007081-for-daisydiff:compile
+[INFO] |  +- info.magnolia.diff:magnolia-diff-pages-integration:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.soft-locking:magnolia-soft-locking:jar:4.0.0:compile
+[INFO] |  +- info.magnolia.scheduler:magnolia-module-scheduler:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.publishing:magnolia-publishing-transactional-core:jar:2.0.2:compile
+[INFO] |  +- info.magnolia.publishing:magnolia-publishing-transactional-sender:jar:2.0.2:compile
+[INFO] |  |  +- info.magnolia.publishing:magnolia-publishing-core:jar:2.0.4:compile
+[INFO] |  |  \- info.magnolia.publishing:magnolia-publishing-sender:jar:2.0.4:compile
+[INFO] |  +- info.magnolia.publishing:magnolia-publishing-transactional-receiver:jar:2.0.2:compile
+[INFO] |  |  \- info.magnolia.publishing:magnolia-publishing-receiver:jar:2.0.4:compile
+[INFO] |  +- info.magnolia.publishing:magnolia-publishing-transactional-app:jar:2.0.2:compile
+[INFO] |  |  \- info.magnolia.publishing:magnolia-publishing-app:jar:2.0.4:compile
+[INFO] |  +- info.magnolia.tools:magnolia-tools:jar:2.0.0:compile
+[INFO] |  |  \- commons-cli:commons-cli:jar:1.9.0:compile
+[INFO] |  +- info.magnolia:magnolia-module-backup:jar:2.5.1:compile
+[INFO] |  |  +- com.h2database:h2:jar:2.3.232:compile
+[INFO] |  |  +- org.apache.derby:derby:jar:10.14.3.0-magnolia:compile
+[INFO] |  |  \- org.zeroturnaround:zt-zip:jar:1.17:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-core:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-pages:jar:3.0.4:compile
+[INFO] |  |  \- io.reactivex.rxjava2:rxjava:jar:2.2.21:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-widget:jar:3.0.4:compile
+[INFO] |  |  \- com.vaadin:vaadin-client:jar:8.27.3:compile
+[INFO] |  |     \- com.google.gwt:gwt-elemental:jar:2.9.0:provided
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-traits:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-personas-app:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-segmentation-app:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-rest:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.marketingtags:magnolia-marketing-tags:jar:3.0.1:compile
+[INFO] |  |  \- info.magnolia.privacy:magnolia-privacy-visitor-manager:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.multisite:magnolia-module-multisite:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.multisite:magnolia-module-multisite-jcr:jar:3.0.1:compile
+[INFO] |  |  \- info.magnolia.core:magnolia-virtual-uri:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.widgetset:magnolia-vaadin-widgetset-pro:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.advancedcache:magnolia-advanced-cache:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.advancedcache:magnolia-advanced-cache-app:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.advancedcache:magnolia-advanced-cache-dpc:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.advancedcache:magnolia-advanced-cache-personalization:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.restclient:magnolia-rest-client-ui:jar:2.0.0:compile
+[INFO] |  |  +- com.jayway.jsonpath:json-path:jar:2.9.0:compile
+[INFO] |  |  |  \- net.minidev:json-smart:jar:2.5.2:compile
+[INFO] |  |  |     \- net.minidev:accessors-smart:jar:2.5.2:compile
+[INFO] |  |  +- info.magnolia.periscope:magnolia-periscope-api:jar:2.0.1:compile
+[INFO] |  |  \- org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec:jar:1.0.2.Final:compile
+[INFO] |  +- info.magnolia.graphql:magnolia-graphql-core:jar:2.0.1:compile
+[INFO] |  |  +- info.magnolia.usagemetrics:magnolia-usage-metrics:jar:2.0.0:compile
+[INFO] |  |  +- com.graphql-java:graphql-java:jar:19.11:compile
+[INFO] |  |  |  \- com.graphql-java:java-dataloader:jar:3.2.0:compile
+[INFO] |  |  +- com.graphql-java:graphql-java-extended-scalars:jar:19.1:compile
+[INFO] |  |  \- org.antlr:antlr4-runtime:jar:4.7.2:compile
+[INFO] |  +- info.magnolia.graphql:magnolia-graphql-jcr:jar:2.0.1:compile
+[INFO] |  +- info.magnolia.graphql:magnolia-graphql-assets:jar:2.0.1:compile
+[INFO] |  +- info.magnolia:magnolia-link-unfurl:jar:3.0.3:compile
+[INFO] |  |  +- com.nmote.oembed:nmote-oembed:jar:0.9-magnolia-BUILD-1115:compile
+[INFO] |  |  |  +- com.squareup.okhttp3:okhttp:jar:4.12.0:compile
+[INFO] |  |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:2.1.0:compile
+[INFO] |  |  |  |     \- org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:2.1.0:compile
+[INFO] |  |  |  \- com.squareup.okio:okio:jar:3.4.0:compile
+[INFO] |  |  |     \- com.squareup.okio:okio-jvm:jar:3.4.0:compile
+[INFO] |  |  |        \- org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.8.0:compile
+[INFO] |  |  +- oro:oro:jar:2.0.8:compile
+[INFO] |  |  +- commons-validator:commons-validator:jar:1.9.0:compile
+[INFO] |  |  \- org.jsoup:jsoup:jar:1.18.3:compile
+[INFO] |  +- info.magnolia.block:magnolia-block-api:jar:3.0.3:compile
+[INFO] |  +- info.magnolia.block:magnolia-block-templating:jar:3.0.3:compile
+[INFO] |  +- info.magnolia.editor:magnolia-content-editor:jar:3.0.3:compile
+[INFO] |  |  +- info.magnolia.ui:magnolia-resurface-theme:jar:6.3.8:compile
+[INFO] |  |  \- com.vaadin:vaadin-themes:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.editor:stories-app:jar:3.0.3:compile
+[INFO] |  |  \- info.magnolia.admincentral:magnolia-admincentral:jar:6.3.5:compile
+[INFO] |  |     +- info.magnolia.periscope:magnolia-speech-recognition:jar:2.0.1:compile
+[INFO] |  |     +- com.vaadin.addon:date-range-field:jar:0.2.0:compile
+[INFO] |  |     \- com.vaadin:vaadin-push:jar:8.27.3:compile
+[INFO] |  |        \- com.vaadin.external.atmosphere:atmosphere-runtime:jar:2.4.30.vaadin7:compile
+[INFO] |  |           \- com.vaadin.external.slf4j:vaadin-slf4j-jdk14:jar:1.6.1:compile
+[INFO] |  +- info.magnolia.editor:magnolia-content-editor-widgetset-v2:jar:3.0.3:compile
+[INFO] |  |  +- com.vaadin:vaadin-compatibility-client:jar:8.27.3:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-ckeditor:jar:1.3.19:compile
+[INFO] |  |  +- org.vaadin.alump:ckeditor:jar:0.1.2:compile
+[INFO] |  |  \- com.google.jsinterop:jsinterop-annotations:jar:2.0.2:compile
+[INFO] |  +- info.magnolia.contenttags:magnolia-content-tags-core:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.contenttags:magnolia-content-tags-ui:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.content:magnolia-content-importer:jar:2.0.0:compile
+[INFO] |  +- info.magnolia.sitemesh:magnolia-module-sitemesh:jar:2.0.1:compile
+[INFO] |  |  \- org.sitemesh:sitemesh:jar:3.0.1:compile
+[INFO] |  +- info.magnolia.webhooks:magnolia-webhooks-core:jar:2.0.1:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-core:jar:2.2.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-retry:jar:2.2.0:compile
+[INFO] |  +- info.magnolia.webhooks:magnolia-webhooks-events-jcr:jar:2.0.1:compile
+[INFO] |  +- info.magnolia.ranker:magnolia-user-result-ranker:jar:2.0.0:compile
+[INFO] |  +- info.magnolia.ranker:user-result-ranker-jcr:jar:2.0.0:compile
+[INFO] |  \- info.magnolia.ui:magnolia-ui-framework:jar:6.3.8:compile
+[INFO] |     +- info.magnolia.types:magnolia-content-types:jar:2.0.1:compile
+[INFO] |     +- org.vaadin.patrik:GridFastNavigation:jar:2.6.3:compile
+[INFO] |     +- com.vaadin:vaadin-compatibility-shared:jar:8.27.3:compile
+[INFO] |     +- org.vaadin.addons:aceeditor:jar:0.8.15:compile
+[INFO] |     +- org.vaadin.addons:extended-token-field:jar:0.3.0:compile
+[INFO] |     +- info.magnolia.vaadin.addons:vaadin-compatibility-context-menu:jar:1.3.19:compile
+[INFO] |     +- info.magnolia.vaadin.addons:vaadin-compatibility-contexthelp:jar:1.3.19:compile
+[INFO] |     +- jakarta.activation:jakarta.activation-api:jar:1.2.2:compile
+[INFO] |     \- com.vaadin.external.gwt:gwt-elemental:jar:2.8.2.vaadin2:compile
+[INFO] +- info.magnolia.dx:magnolia-dx-core-webapp:war:6.3.8:compile
+[INFO] +- com.oracle:ojdbc7:jar:12.1.0.1:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-services:jar:3.0.0:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile
+[INFO] |  +- jakarta.json:jakarta.json-api:jar:1.1.7-magnolia:compile
+[INFO] |  +- org.glassfish:javax.json:jar:1.1.4:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO] |  +- io.swagger.core.v3:swagger-annotations:jar:2.2.26:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-multipart-provider:jar:5.0.9.Final:compile
+[INFO] |  |  +- com.sun.mail:jakarta.mail:jar:1.6.4:compile
+[INFO] |  |  +- org.apache.james:apache-mime4j-dom:jar:0.8.11:compile
+[INFO] |  |  |  \- org.apache.james:apache-mime4j-core:jar:0.8.11:compile
+[INFO] |  |  +- org.apache.james:apache-mime4j-storage:jar:0.8.11:compile
+[INFO] |  |  \- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |  +- javax.jcr:jcr:jar:2.0:compile
+[INFO] |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.22.0:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.28.0:compile
+[INFO] |  \- org.eclipse.microprofile.health:microprofile-health-api:jar:3.1:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-integration:jar:3.0.2:compile
+[INFO] |  +- info.magnolia.core:magnolia-configuration:jar:6.3.8:compile
+[INFO] |  |  \- org.atteo:evo-inflector:jar:1.3:compile
+[INFO] |  +- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core-spi:jar:5.0.9.Final:compile
+[INFO] |  |  +- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  |  \- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-core:jar:5.0.9.Final:compile
+[INFO] |  |  \- com.ibm.async:asyncutil:jar:0.1.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jackson2-provider:jar:5.0.9.Final:compile
+[INFO] |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.13.5:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.13.5:compile
+[INFO] |  |  \- com.github.java-json-tools:json-patch:jar:1.13:compile
+[INFO] |  |     +- com.github.java-json-tools:msg-simple:jar:1.2:compile
+[INFO] |  |     |  \- com.github.java-json-tools:btf:jar:1.3:compile
+[INFO] |  |     \- com.github.java-json-tools:jackson-coreutils:jar:2.0:compile
+[INFO] |  +- org.jboss.resteasy:resteasy-jaxb-provider:jar:5.0.9.Final:compile
+[INFO] |  |  \- org.glassfish.jaxb:jaxb-runtime:jar:2.3.8:compile
+[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.8:compile
+[INFO] |  |     \- com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[INFO] |  +- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- io.github.classgraph:classgraph:jar:4.8.179:compile
+[INFO] |  +- info.magnolia.beanutils2:commons-beanutils2:jar:2.0.0-magnolia:compile
+[INFO] |  \- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] +- info.magnolia.rest:magnolia-rest-tools:jar:3.0.0:compile
+[INFO] |  +- io.swagger.core.v3:swagger-jaxrs2:jar:2.2.26:compile
+[INFO] |  |  \- org.javassist:javassist:jar:3.30.2-GA:compile
+[INFO] |  +- io.swagger.core.v3:swagger-integration:jar:2.2.26:compile
+[INFO] |  |  \- io.swagger.core.v3:swagger-core:jar:2.2.26:compile
+[INFO] |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.13.5:compile
+[INFO] |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile
+[INFO] |  \- io.swagger.core.v3:swagger-models:jar:2.2.26:compile
+[INFO] +- info.magnolia.livecopy:magnolia-livecopy:jar:4.1.0:compile
+[INFO] |  +- info.magnolia.pages:magnolia-pages-app:jar:6.3.5:compile
+[INFO] |  |  +- info.magnolia.pages:magnolia-pages-editor-widget:jar:6.3.5:compile
+[INFO] |  |  \- jakarta.servlet:jakarta.servlet-api:jar:4.0.3:compile
+[INFO] |  +- info.magnolia.icons:magnolia-icons:jar:29:compile
+[INFO] |  +- org.kie:kie-api:jar:7.74.1.Final:compile
+[INFO] |  |  \- org.kie.soup:kie-soup-maven-support:jar:7.74.1.Final:compile
+[INFO] |  +- com.machinezoo.noexception:noexception:jar:1.9.1:compile
+[INFO] |  |  +- com.machinezoo.stagean:stagean:jar:1.3.0:compile
+[INFO] |  |  \- com.machinezoo.closeablescope:closeablescope:jar:1.0.1:compile
+[INFO] |  \- info.magnolia.types:magnolia-content-types-jcr:jar:2.0.1:compile
+[INFO] +- info.magnolia.templating:magnolia-templating-kit:jar:2.0.6:compile
+[INFO] |  \- info.magnolia.templating:magnolia-templating-essentials-models:jar:3.0.2:compile
+[INFO] +- info.magnolia:magnolia-ldap:jar:1.10.3:compile
+[INFO] +- info.magnolia.cache:magnolia-cache-core:jar:6.0.3:compile
+[INFO] |  +- info.magnolia.core:magnolia-resource-loader:jar:6.3.8:compile
+[INFO] |  +- org.apache.httpcomponents:httpclient:jar:4.5.14:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:compile
+[INFO] |  \- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] +- info.magnolia:magnolia-templating:jar:6.3.8:compile
+[INFO] |  +- info.magnolia:magnolia-rendering:jar:6.3.8:compile
+[INFO] |  |  \- org.apache.jackrabbit:jackrabbit-data:jar:2.22.0:compile
+[INFO] |  +- info.magnolia:magnolia-i18n:jar:6.3.8:compile
+[INFO] |  \- info.magnolia.core:magnolia-freemarker-support:jar:6.3.8:compile
+[INFO] +- info.magnolia.dam:magnolia-dam-app-compatibility:jar:3.0.42:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-api:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-jcr:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-core:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-jcr:jar:6.3.8:compile
+[INFO] |  |  \- info.magnolia.imaging:magnolia-imaging-support:jar:4.0.3:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-api:jar:6.3.8:compile
+[INFO] |  +- info.magnolia.dam:magnolia-dam-app:jar:4.0.6:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-framework-compatibility:jar:6.3.8:compile
+[INFO] |  |  +- info.magnolia.vaadin.addons:vaadin-compatibility-aceeditor:jar:1.3.19:compile
+[INFO] |  |  +- org.apache.commons:commons-compress:jar:1.26.0:compile
+[INFO] |  |  +- org.vaadin.addon:easyuploads:jar:8.0.1:compile
+[INFO] |  |  |  \- org.vaadin:viritin-v7-compatibility:jar:1.0:compile
+[INFO] |  |  |     +- org.vaadin:viritin:jar:2.1:compile
+[INFO] |  |  |     +- org.vaadin.addon:confirmdialog:jar:3.2.0:compile
+[INFO] |  |  |     +- org.commonjava.googlecode.markdown4j:markdown4j:jar:2.2-cj-1.1:compile
+[INFO] |  |  |     \- javax.el:javax.el-api:jar:2.2.4:compile
+[INFO] |  |  \- com.jhlabs:filters:jar:2.0.235-1:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-vaadin-common-widgets:jar:6.3.8:compile
+[INFO] |  |  +- org.vaadin.addons:vaadin-combobox-multiselect:jar:2.7:compile
+[INFO] |  |  \- org.vaadin.addons:gwt-graphics:jar:1.0.0:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-admincentral:jar:6.3.0:compile
+[INFO] |  |  \- info.magnolia.ui:magnolia-ui-vaadin-theme:jar:6.3.8:compile
+[INFO] |  |     \- com.vaadin:vaadin-compatibility-themes:jar:8.27.3:compile
+[INFO] |  +- info.magnolia.ui:magnolia-ui-mediaeditor:jar:6.3.8:compile
+[INFO] |  +- com.vaadin:vaadin-server:jar:8.27.3:compile
+[INFO] |  |  +- com.vaadin:vaadin-sass-compiler:jar:0.9.13:provided
+[INFO] |  |  |  +- org.w3c.css:sac:jar:1.3:provided
+[INFO] |  |  |  \- com.vaadin.external.flute:flute:jar:1.3.0.gg2:provided
+[INFO] |  |  +- com.vaadin:license-checker:jar:1.12.14:compile
+[INFO] |  |  |  +- com.github.oshi:oshi-core:jar:6.4.0:compile
+[INFO] |  |  |  |  +- net.java.dev.jna:jna:jar:5.13.0:compile
+[INFO] |  |  |  |  \- net.java.dev.jna:jna-platform:jar:5.13.0:compile
+[INFO] |  |  |  +- com.nimbusds:nimbus-jose-jwt:jar:9.37.3:compile
+[INFO] |  |  |  +- org.lucee:jcip-annotations:jar:1.0.0:compile
+[INFO] |  |  |  \- com.vaadin:open:jar:8.5.0.1:compile
+[INFO] |  |  \- com.vaadin.external:gentyref:jar:1.2.0.vaadin1:compile
+[INFO] |  +- com.vaadin:vaadin-compatibility-server:jar:8.27.3:compile
+[INFO] |  +- com.vaadin:vaadin-shared:jar:8.27.3:compile
+[INFO] |  +- org.devlib.schmidt:imageinfo:jar:1.9:compile
+[INFO] |  +- com.google.inject:guice:jar:5.1.0:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.google.code.gson:gson:jar:2.11.0:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-core:jar:2.22.0:compile
+[INFO] |  |  +- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |     \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  \- javax.inject:javax.inject:jar:1:compile
+[INFO] +- info.magnolia.personalization:magnolia-personalization-compatibility:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-components:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.personalization:magnolia-personalization-preview-app:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.pages:magnolia-pages-app-compatibility:jar:6.3.5:compile
+[INFO] |  |  \- com.thoughtworks.proxytoys:proxytoys:jar:1.01-MAGNOLIA-5317-patched:compile
+[INFO] |  +- info.magnolia.task:magnolia-task-management:jar:2.0.0:compile
+[INFO] |  +- info.magnolia.form:magnolia-form:jar:3.0.0:compile
+[INFO] |  +- info.magnolia.privacy:magnolia-privacy-cookie-manager:jar:3.0.0:compile
+[INFO] |  \- com.maxmind.geoip2:geoip2:jar:4.2.1:compile
+[INFO] |     \- com.maxmind.db:maxmind-db:jar:3.1.1:compile
+[INFO] +- info.magnolia:magnolia-core-compatibility:jar:6.3.7:compile
+[INFO] |  +- org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.22.0:compile
+[INFO] |  +- commons-betwixt:commons-betwixt:jar:0.8:compile
+[INFO] |  |  \- commons-digester:commons-digester:jar:2.1:compile
+[INFO] |  +- org.jdom:jdom2:jar:2.0.6.1:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.9.4:compile
+[INFO] |  \- org.freemarker:freemarker:jar:2.3.33:compile
+[INFO] +- roosevelt.shopping.modules:common-app:jar:3.0.2-SNAPSHOT:compile
+[INFO] |  \- io.swagger:swagger-annotations:jar:1.5.4:compile
+[INFO] +- roosevelt.shopping.modules:plans-catalog-app:jar:3.0.2-SNAPSHOT:compile
+[INFO] |  +- net.sf.json-lib:json-lib:jar:jdk15:2.4:compile
+[INFO] |  |  +- commons-lang:commons-lang:jar:2.5:compile
+[INFO] |  |  +- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  |  \- net.sf.ezmorph:ezmorph:jar:1.0.6:compile
+[INFO] |  +- info.magnolia.definitions:magnolia-definitions-app:jar:3.0.4:compile
+[INFO] |  +- info.magnolia.site:magnolia-site:jar:2.0.1:compile
+[INFO] |  \- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] +- roosevelt.shopping.modules:turnkey-app:jar:3.0.2-SNAPSHOT:compile
+[INFO] +- roosevelt.shopping.modules:single-page-app-integration:jar:3.0.2-SNAPSHOT:compile
+[INFO] |  \- info.magnolia.templating:magnolia-jsonfn:jar:1.0.7:compile
+[INFO] +- roosevelt.content.workflow:custom-workflow:jar:3.0.2-SNAPSHOT:compile
+[INFO] \- roosevelt.shopping.modules:client-environment-app:jar:3.0.2-SNAPSHOT:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for shopping-cms (parent pom) 3.0.2-SNAPSHOT:
+[INFO] 
+[INFO] shopping-cms (parent pom) .......................... SUCCESS [  1.113 s]
+[INFO] common-app Magnolia module ......................... SUCCESS [  0.699 s]
+[INFO] plans-catalog-app Magnolia Module .................. SUCCESS [  0.638 s]
+[INFO] turnkey-app Magnolia Module ........................ SUCCESS [  0.571 s]
+[INFO] SPA Integration Magnolia Module .................... SUCCESS [  0.037 s]
+[INFO] custom-workflow Magnolia Module .................... SUCCESS [  0.295 s]
+[INFO] client-environment-app Magnolia Module ............. SUCCESS [  0.014 s]
+[INFO] magnolia-cms-webapp: webapp ........................ SUCCESS [ 11.756 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.230 s
+[INFO] Finished at: 2026-04-06T12:20:46-04:00
+[INFO] ------------------------------------------------------------------------
